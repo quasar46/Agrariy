@@ -1,0 +1,86 @@
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  border-bottom: 1px solid #c5c7c4;
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  min-height: 100%;
+  background: #ff5700;
+  border-radius: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.header__logo {
+  align-self: center;
+}
+
+.header__nav {
+  ul {
+    display: flex;
+    height: 100%;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    &:last-child {
+      display: flex;
+      justify-content: center;
+      font-weight: 500;
+      margin-right: 0;
+      width: 100px;
+      border-left: 1px solid #c5c7c4;
+      border-right: 1px solid #c5c7c4;
+    }
+  }
+  a {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1c1c1c;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1c1c1c;
+  text-decoration: underline;
+  a {
+    margin-bottom: 4px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header__call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 238px;
+  min-height: 100%;
+  background: #ff5700;
+  border-radius: 5px 0 0 20px;
+  cursor: pointer;
+  button {
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: inherit;
+  }
+}
