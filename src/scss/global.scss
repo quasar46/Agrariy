@@ -83,6 +83,7 @@ h4 {
 }
 
 .page {
+  flex:1 0 auto;
   padding-top: 100px;
 }
 
@@ -100,6 +101,9 @@ h4 {
     font-size: 20px;
     font-weight: 500;
     text-decoration: underline;
+    &:hover {
+      color: #ff5700;
+    }
   }
 }
 
@@ -119,6 +123,7 @@ h4 {
   position: absolute;
   transform: translateY(-50%);
   z-index: 10;
+  cursor: pointer;
 }
 
 .slick-prev {
@@ -163,10 +168,33 @@ h4 {
   align-self: start;
   padding: 20px 40px;
   border-radius: 20px 5px 20px 5px;
-  margin-bottom: 50px;
   cursor: pointer;
 }
 
 .inner-block {
   margin-bottom: 220px;
+}
+
+.button-fixed {
+  position: fixed;
+  display: flex;
+  bottom: 50px;
+  right: 0;
+  border-radius: 5px 0 0 20px;
+  overflow: hidden;
+  z-index: 100;
+  width: 136px;
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    height: 68px;
+    width: 50%;
+    &:first-child {
+      border-right: 2px solid #fff;
+    }
+  }
 }

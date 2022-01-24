@@ -1,4 +1,70 @@
 footer.footer 
     .footer__wrapper 
-        .footer__col 
-            
+        .footer__block 
+            p Адрес:
+            p г. Курск, ул. Димитрова, д. 76 офис 403/3
+            p (GPS 51.746, 36.186)
+            a(href="") 
+                img(src="img/icons/marker.svg", alt="")
+                span Показать на карте
+        .footer__block 
+            .footer__contacts
+                p Контакты
+                a(href="mailto:info@agrariy.center") 
+                    img(src="img/icons/mail.svg", alt="")
+                    span info@agrariy.center
+                a(href="tel:+78004443400") 
+                    img(src="img/icons/phone.svg", alt="")
+                    span 8 800 444 34 00
+            .footer__social 
+                p Мы в соцсетях:
+                ul
+                    li 
+                        a(href="") 
+                            img(src="img/icons/vk.svg", alt="")
+                    li 
+                        a(href="") 
+                            img(src="img/icons/fb.svg", alt="")
+                    li 
+                        a(href="") 
+                            img(src="img/icons/inst.svg", alt="")
+                    li 
+                        a(href="") 
+                            img(src="img/icons/youtube.svg", alt="")
+        .footer__block 
+            a(href="") Запасные части
+            a(href="") Сервис
+            a(href="") Новости
+            a(href="") Компания
+            a(href="") Контакты
+        
+        .footer__block 
+            p © ОOО «Аграрий» 2021
+            p Создано в <a href="https://kvokka.com" target="_blank">kvokka</a>
+
+// модальные окна
+.modal
+    // заказать звонок
+    .modal__inner.modal__call
+        button.cross
+            img(src="img/icons/cross.svg", alt="закрыть модальное окно")
+        h2.modal__title Заказать звонок
+        form.modal__form(action="") 
+            input(type="text" placeholder="ФИО")
+            input.phone-input(type="text" placeholder="+7 (___) ___-__-__")
+            p Нажимая отправить, я принимаю условия <a href="">пользовательского соглашения</a> и условия обработки <a href="">персональных данных</a>
+            button.button Заказать
+    // личный кабинет
+    .modal__inner.modal__lk
+        button.cross
+            img(src="img/icons/cross.svg", alt="закрыть модальное окно")
+        h2.modal__title Личный кабинет
+        form.modal__form(action="") 
+            input(type="text" placeholder="E-mail")
+            input(type="password" placeholder="+пароль")
+            p Нажимая отправить, я принимаю условия <a href="">пользовательского соглашения</a> и условия обработки <a href="">персональных данных</a>
+            button.button Войти
+    // заявка отправлена
+    .modal__inner.modal__order 
+        p Спасибо за вашу заявку! В ближайшее время с Вами свяжутся наши менеджеры!
+    

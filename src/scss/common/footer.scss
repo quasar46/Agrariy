@@ -3,6 +3,10 @@
   background-image: url("../img/footer/graphic.svg");
   background-size: 100% auto;
   background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  z-index: 10;
+  // margin: 0 50px;
   //   img {
   //     position: absolute;
   //     top: 0;
@@ -10,4 +14,62 @@
   //     height: 109px;
   //     width: 100%;
   //   }
+}
+
+.footer__wrapper {
+  background: #ececec;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 150px;
+  padding-right: 320px;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.footer__contacts {
+  margin-bottom: 40px;
+}
+
+.footer__social {
+  ul {
+    display: flex;
+  }
+}
+
+.footer__block {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    img {
+      margin-right: 20px;
+    }
+    &:hover {
+      color: #ff5700;
+    }
+  }
+  p {
+    margin-bottom: 10px;
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+  &:nth-child(3) {
+    margin-left: auto;
+  }
+  &:nth-child(2) {
+    margin-left: auto;
+  }
+  &:last-child {
+    width: 100%;
+    flex:1 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      display: inline;
+    }
+  }
 }

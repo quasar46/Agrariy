@@ -1,0 +1,18 @@
+.breadcrumbs {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+        margin-right: 10px;
+    }
+    a {
+      font-size: 16px;
+      color: #969696;
+      &:hover {
+          color:#FF5700;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+
+
+.tabs__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  a {
+    color: #969696;
+    border: 1px solid #969696;
+    border-radius: 10px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    &.active {
+      color: #ff5700;
+      border-color: #ff5700;
+      overflow: hidden;
+    }
+  }
+}
+
+

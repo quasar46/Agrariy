@@ -6,9 +6,10 @@
   flex: 1 0 auto;
   padding-top: 30px;
   padding-right: 30px;
-  background: #fff;
   height: 100vh;
   z-index: 100;
+  transition: all 0.3s;
+  border-right: 1px solid #c5c7c4;
   ul {
     display: flex;
     flex-direction: column;
@@ -22,6 +23,12 @@
     a {
       display: flex;
       align-items: center;
+      &:hover {
+        p {
+          color:#FF5700;
+        }
+        
+      }
     }
     span {
       width: 55px;
@@ -42,9 +49,11 @@
       display: none;
     }
   }
-  &.active {
+  &.show {
     width: auto;
     border-radius: 0 10px 10px 0;
+    background: #fff;
+    transition: all 0.3s;
     p {
       display: block;
     }

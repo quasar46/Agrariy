@@ -1,8 +1,8 @@
 header.header
     .header__inner
-        .header__burger
-            img(src="img/burger.svg", alt="")
-        a.header__logo(href="")
+        .header__burger#burger
+            //- img(src="img/burger.svg", alt="")
+        a.header__logo(href="/")
             img(src="img/logo.svg", alt="логотип")
         nav.header__nav
             ul
@@ -12,15 +12,183 @@ header.header
                     a(href="") Сервис
                 li
                     a(href="") Новости
+                    ul.submenu 
+                        li
+                            a(href="news.html") Новости
+                        li
+                            a(href="sales.html") Акции
+                        li
+                            a(href="articles.html") Статьи
                 li
                     a(href="") Компания
+                    ul.submenu
+                        li
+                            a(href="") О компании
+                        li
+                            a(href="") Сертификаты и лицензии
+                        li
+                            a(href="") Документы
+                        li
+                            a(href="") Вакансии
+                        li
+                            a(href="") Партнеры
+                        li.angle
+                            a(href="") Галерея
+                            ul.subsubmenu 
+                                li
+                                    a(href="") Фотогалерея
+                                li
+                                    a(href="") Видеогалерея
                 li
-                    a(href="") Контакты
-                li
-                    a(href="") ЛК
+                    a(href="contacts.html") Контакты
+                li.lk#buttonLk
+                    a ЛК
         .header__contacts
             a(href="emailto: info@agrariy.center") info@agrariy.center
             a(href="tel+78004443400") 8 800 444 34 00
-        .header__call
+        .header__call#buttonCall
             button Заказать звонок
+        // меню по клику на бургер
+        .main-menu 
+            .main-menu__item 
+                img(src="", alt="")
+                ul 
+                    li
+                        p Строительные материалы
+                    li
+                        a(href="") Кирпичи и камни
+                    li
+                        a(href="") Доски
+                    li
+                        a(href="") Песок и цемент
+                    li
+                        a(href="") Плитка
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Сельхозтехника
+                    li
+                        a(href="") Техника
+                    li
+                        a(href="") Техника для растениеводства
+                    li
+                        a(href="") Техника для животноводства
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Спецтехника
+                    li
+                        a(href="") Дорожно-строительная техника
+                    li
+                        a(href="") Лесоизготовительная техника
+                    li
+                        a(href="") Техника для ЖКХ
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Фермерское оборудование
+                    li
+                        a(href="") Кирпичи и камни
+                    li
+                        a(href="") Песок и цемент
+                    li
+                        a(href="") Плитка
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Поливочные системы
+                    li
+                        a(href="") Техника
+                    li
+                        a(href="") Техника для животноводства
+
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Сельхозтехника
+                    li
+                        a(href="") Техника
+                    li
+                        a(href="") Техника для растениеводства
+                    li
+                        a(href="") Техника для животноводства
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Сельхозтехника
+                    li
+                        a(href="") Техника
+                    li
+                        a(href="") Техника для растениеводства
+                    li
+                        a(href="") Техника для животноводства
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Фермерское оборудование
+                    li
+                        a(href="") Кирпичи и камни
+                    li
+                        a(href="") Песок и цемент
+                    li
+                        a(href="") Плитка
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Сельхозтехника
+                    li
+                        a(href="") Техника
+                    li
+                        a(href="") Техника для растениеводства
+                    li
+                        a(href="") Техника для животноводства
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Строительные материалы 
+                    li
+                        a(href="") Кирпичи и камни
+                    li
+                        a(href="") Доски
+                    li
+                        a(href="") Песок и цемент
+                    li
+                        a(href="") Плитка
+            .main-menu__item
+                img(src="", alt="")
+                ul
+                    li
+                        p Сельхозтехника
+                    li
+                        a(href="") Техника
+                    li
+                        a(href="") Техника для растениеводства
+                    li
+                        a(href="") Техника для животноводства
+            .main-menu__item 
+                img(src="", alt="")
+                ul 
+                    li
+                        p Поливочные системы
+                    li 
+                        a(href="") Техника
+                    li
+                        a(href="") Техника для животноводства
+
+    .button-fixed 
+        button.button 
+            img(src="img/icons/basket.svg", alt="")
+        button.button 
+            img(src="img/icons/favorite.svg", alt="")
+
+
 h1.visually-hidden Аграрий
