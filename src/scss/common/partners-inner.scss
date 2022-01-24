@@ -1,0 +1,21 @@
+.partners-inner__slider {
+  .slick-list {
+    // margin: 0 -15px;
+  }
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 35px;
+  }
+}
+
+.partners-inner__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c5c7c4;
+  border-radius: 10px;
+  height: 130px;
+  margin: 0 15px;
+}

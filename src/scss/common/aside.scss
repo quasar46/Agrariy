@@ -1,0 +1,52 @@
+.aside {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 100px;
+  flex: 1 0 auto;
+  padding-top: 30px;
+  padding-right: 30px;
+  background: #fff;
+  height: 100vh;
+  z-index: 100;
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+    span {
+      width: 55px;
+      height: 55px;
+      background: #ececec;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1 0 auto;
+      margin-right: 22px;
+      margin-left: 22px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #1c1c1c;
+      display: none;
+    }
+  }
+  &.active {
+    width: auto;
+    border-radius: 0 10px 10px 0;
+    p {
+      display: block;
+    }
+  }
+}

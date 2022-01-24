@@ -1,3 +1,12 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 100;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -10,7 +19,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
+  flex: 1 0 auto;
   min-height: 100%;
   background: #ff5700;
   border-radius: 0 0 10px 0;

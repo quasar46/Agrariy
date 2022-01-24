@@ -1,0 +1,24 @@
+.news-inner__item {
+  margin: 0 15px;
+  img {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  date {
+    display: block;
+    color: rgba(28, 28, 28, 0.5);
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.news-inner__slider {
+  padding: 0 30px;
+  .slick-list {
+    margin: 0 -15px;
+    margin-bottom: 35px;
+  }
+}
