@@ -3,6 +3,7 @@
 // @import "utils/slick";
 @import "utils/variables";
 @import "utils/slick";
+@import "utils/jquery.fancybox.css";
 // @import "mixins/media";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
@@ -23,6 +24,10 @@ body {
   font-size: 18px;
   color: #1c1c1c;
   font-family: $fontBase;
+}
+
+body.hidden {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -83,118 +88,27 @@ h4 {
 }
 
 .page {
-  flex:1 0 auto;
+  flex: 1 0 auto;
   padding-top: 100px;
+  @media (max-width: 1366px) {
+    padding-top: 88px;
+  }
+  @media (max-width: 1024px) {
+    padding-top: 70px;
+  }
 }
 
 .content {
   padding-left: 100px;
   margin: 0 50px;
-}
-
-.content__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  a {
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: underline;
-    &:hover {
-      color: #ff5700;
-    }
+  @media (max-width: 1366px) {
+    padding-left: 88px;
   }
-}
-
-.title {
-  font-weight: 700;
-  font-size: 52px;
-  text-transform: uppercase;
-}
-
-.slick-arrow {
-  font-size: 0;
-  background: #ff5700;
-  width: 52px;
-  height: 64px;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  transform: translateY(-50%);
-  z-index: 10;
-  cursor: pointer;
-}
-
-.slick-prev {
-  top: 50%;
-  left: 0;
-  background-image: url("../img/slick-prev.svg");
-  border-radius: 5px 20px 5px 20px;
-}
-
-.slick-next {
-  top: 50%;
-  right: 0;
-  background-image: url("../img/slick-next.svg");
-  border-radius: 20px 5px 20px 5px;
-}
-
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  li {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #c5c7c4;
-    font-size: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    &:last-child {
-      margin-right: 0;
-    }
-    &.slick-active {
-      background: #ff5700;
-    }
+  @media (max-width: 1024px) {
+    padding-left: 70px;
   }
-}
-
-.button {
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  background: #ff5700;
-  align-self: start;
-  padding: 20px 40px;
-  border-radius: 20px 5px 20px 5px;
-  cursor: pointer;
-}
-
-.inner-block {
-  margin-bottom: 220px;
-}
-
-.button-fixed {
-  position: fixed;
-  display: flex;
-  bottom: 50px;
-  right: 0;
-  border-radius: 5px 0 0 20px;
-  overflow: hidden;
-  z-index: 100;
-  width: 136px;
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    height: 68px;
-    width: 50%;
-    &:first-child {
-      border-right: 2px solid #fff;
-    }
+  @media (max-width: 360px) {
+    padding-left: 0;
+    margin: 0 16px;
   }
 }

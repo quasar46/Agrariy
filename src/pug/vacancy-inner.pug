@@ -1,0 +1,94 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Компания
+                            li 
+                                span |
+                            li 
+                                a(href="vacancy.html") Вакансии
+                            li 
+                                span |
+                            li 
+                                a(href="") Руководитель сервисного центра
+
+                    .vacancy-inner.inner-block
+                        .inner-block__header
+                            h2.title Руководитель сервисного центра
+                        .vacancy-inner__wrapper 
+                            .vacancy-inner__block 
+                                p.vacancy-inner__title Описание вакансии:
+                                ul 
+                                    li Составление программ производственного контроля, рабочих программ, программ и графиков аналитического контроля документации системы менеджмента ПХЛ и другой производственно-технической документации ПХЛ
+                                    li успешный управленческий опыт работы от 5 лет;
+                                    li опыт построения процессов сервисной службы;
+                                    li опыт работы с РРО, POS-системами, весовым оборудованием (будет преимуществом);
+                                    li Составление программ производственного контроля, рабочих программ, программ и графиков аналитического контроля документации системы менеджмента ПХЛ и другой производственно-технической документации ПХЛ
+
+                            .vacancy-inner__block
+                                p.vacancy-inner__title Требования:
+                                ul
+                                    li высшее техническое образование;
+                                    li успешный управленческий опыт работы от 5 лет;
+                                    li опыт построения процессов сервисной службы;
+                                    li опыт работы с РРО, POS-системами, весовым оборудованием (будет преимуществом);
+                                    li ответственность, коммуникабельность, проактивная жизненная позиция, порядочность
+
+                            .vacancy-inner__block
+                                p.vacancy-inner__title Условия:
+                                ul
+                                    li высшее техническое образование;
+                                    li успешный управленческий опыт работы от 5 лет;
+                                    li опыт построения процессов сервисной службы;
+                                    li опыт работы с РРО, POS-системами, весовым оборудованием (будет преимуществом);
+                                    li ответственность, коммуникабельность, проактивная жизненная позиция, порядочность
+
+                            .vacancy-inner__block 
+                                p.vacancy-inner__title Подать резюме:
+                                form(action="get")
+                                    ul
+                                        li
+                                            input(type="text" placeholder="Фамилия")
+                                        li
+                                            input(type="text" placeholder="Имя")
+                                        li
+                                            input(type="text" placeholder="Отчество")
+                                        li
+                                            input(type="text" placeholder="Город проживание")
+                                        li
+                                            input(type="text" placeholder="Вакантная должность")
+                                        li
+                                            input.phone-input(type="phone" placeholder="+7(___) ___-__-__")
+                                        li
+                                            input(type="email" placeholder="E-mail")
+                                        li.input-wrapper
+                                            input.input.input__file(type="file" name="file" id="input__file")
+                                            label.input__file-button(for="input__file")
+                                                span.input__file-icon-wrapper
+                                                    img.input__file-icon(src="img/icons/screpka.svg" alt="")
+                                                span.input__file-button-text Прикрепить файл резюме
+                                            p Один файл до 10 МБ.
+
+                                            //- p Один файл до 10 мб.
+                                        p.consent Нажимая отправить, я принимаю условия <a href="">пользовательского соглашения</a> и обработки <a href="">персональных данных</a>
+                                        button.button(type="submit") Отправить
+
+                            .vacancy-inner__block 
+                                p Хотите больше вакансий? <a href="">Смотреть все.</a>
+
+
+
+            include modules/footer
+        include modules/script

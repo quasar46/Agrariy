@@ -1,0 +1,62 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Компания
+                            li 
+                                span |
+                            li 
+                                a Лицензии и сертификаты
+
+                    .sertificats.inner-block
+                        .inner-block__header
+                            h2.inner-block__title Лицензии и сертификаты
+                        .sertificats__wrapper 
+                            .sertificats__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="" download)
+                                    span PDF 
+                                    img(src="img/icons/download2.svg" alt="")
+                            .sertificats__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="" download)
+                                    span PDF 
+                                    img(src="img/icons/download2.svg" alt="")
+                            .sertificats__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="" download)
+                                    span PDF 
+                                    img(src="img/icons/download2.svg" alt="")
+                            .sertificats__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="" download)
+                                    span PDF 
+                                    img(src="img/icons/download2.svg" alt="")
+                            .sertificats__item
+                                p Лицензия на осуществление торговой деятельности
+                                a(href="" download)
+                                    span PDF 
+                                    img(src="img/icons/download2.svg" alt="")
+                            .sertificats__item
+                                p На осуществление работ с использовани-ем сведений, составля-ющих государственн...
+                                a(href="" download)
+                                    span PDF 
+                                    img(src="img/icons/download2.svg" alt="")
+
+
+
+
+            include modules/footer
+        include modules/script

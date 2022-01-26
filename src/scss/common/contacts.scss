@@ -10,7 +10,10 @@
     align-items: center;
     margin-left: 60px;
     img {
-        margin-right: 20px;
+      margin-right: 20px;
+    }
+    span {
+      text-decoration: underline;
     }
   }
 }
@@ -47,4 +50,16 @@
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #dfdfdf;
+}
+
+.contacts__links {
+  a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  img {
+    margin-right: 20px;
+  }
 }

@@ -1,0 +1,26 @@
+.feedback {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  flex-wrap: wrap;
+  grid-template-areas: "first second" "first last";
+}
+
+.feedback__block {
+  &:first-child {
+    grid-area: first;
+  }
+  &:nth-child(2) {
+    grid-area: second;
+  }
+  &:last-child {
+    grid-area: last;
+    width: 100%;
+    margin-left: auto;
+  }
+}

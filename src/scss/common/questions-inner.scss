@@ -6,6 +6,7 @@
 .questions-inner__form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   input,
   textarea {
     border: 1px solid #c5c7c4;
@@ -14,24 +15,54 @@
     padding: 0 30px;
     margin-bottom: 15px;
   }
+  input {
+    &:nth-child(1),
+    &:nth-child(2) {
+      @media (max-width: 1024px) {
+        width: 49%;
+      }
+      @media (max-width: 360px) {
+        width: 100%;
+      }
+    }
+  }
   textarea {
     padding: 20px 30px;
     min-height: 127px;
     resize: none;
+    width: 100%;
   }
   p {
+    line-height: 1.5;
     a {
       color: #ff5700;
       text-decoration: underline;
     }
   }
+  @media (max-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .questions-inner__block {
+  &:first-child {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
   &:nth-child(2) {
     max-width: 845px;
     width: 100%;
     margin-left: 140px;
+    @media (max-width: 1366px) {
+      max-width: 589px;
+      margin-left: 50px;
+    }
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      margin-left: 0;
+    }
   }
 }
 

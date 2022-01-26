@@ -1,43 +1,48 @@
 footer.footer 
     .footer__wrapper 
         .footer__block 
-            p Адрес:
+            p.footer__title Адрес:
             p г. Курск, ул. Димитрова, д. 76 офис 403/3
             p (GPS 51.746, 36.186)
             a(href="") 
-                img(src="img/icons/marker.svg", alt="")
+                img(src="img/icons/marker.svg" alt="")
                 span Показать на карте
         .footer__block 
-            .footer__contacts
-                p Контакты
+            .footer__contacts.contacts__links
+                p.footer__title Контакты:
                 a(href="mailto:info@agrariy.center") 
-                    img(src="img/icons/mail.svg", alt="")
+                    img(src="img/icons/mail.svg" alt="")
                     span info@agrariy.center
                 a(href="tel:+78004443400") 
-                    img(src="img/icons/phone.svg", alt="")
+                    img(src="img/icons/phone.svg" alt="")
                     span 8 800 444 34 00
             .footer__social 
-                p Мы в соцсетях:
+                p.footer__title Мы в соцсетях:
                 ul
                     li 
                         a(href="") 
-                            img(src="img/icons/vk.svg", alt="")
+                            img(src="img/icons/vk.svg" alt="")
                     li 
                         a(href="") 
-                            img(src="img/icons/fb.svg", alt="")
+                            img(src="img/icons/fb.svg" alt="")
                     li 
                         a(href="") 
-                            img(src="img/icons/inst.svg", alt="")
+                            img(src="img/icons/inst.svg" alt="")
                     li 
                         a(href="") 
-                            img(src="img/icons/youtube.svg", alt="")
+                            img(src="img/icons/youtube.svg" alt="")
         .footer__block 
-            a(href="") Запасные части
-            a(href="") Сервис
-            a(href="") Новости
-            a(href="") Компания
-            a(href="") Контакты
-        
+            .footer__nav
+                button#footerNav
+                    span Меню
+                    img(src="img/icons/arrow.svg" alt="")
+                nav
+                    a(href="") Каталог
+                    a(href="") Сервис
+                    a(href="") Новости
+                    a(href="") Компания
+                    a(href="") Контакты
+
         .footer__block 
             p © ОOО «Аграрий» 2021
             p Создано в <a href="https://kvokka.com" target="_blank">kvokka</a>
@@ -47,7 +52,7 @@ footer.footer
     // заказать звонок
     .modal__inner.modal__call
         button.cross
-            img(src="img/icons/cross.svg", alt="закрыть модальное окно")
+            img(src="img/icons/cross.svg" alt="закрыть модальное окно")
         h2.modal__title Заказать звонок
         form.modal__form(action="") 
             input(type="text" placeholder="ФИО")
@@ -57,7 +62,7 @@ footer.footer
     // личный кабинет
     .modal__inner.modal__lk
         button.cross
-            img(src="img/icons/cross.svg", alt="закрыть модальное окно")
+            img(src="img/icons/cross.svg" alt="закрыть модальное окно")
         h2.modal__title Личный кабинет
         form.modal__form(action="") 
             input(type="text" placeholder="E-mail")
@@ -67,4 +72,3 @@ footer.footer
     // заявка отправлена
     .modal__inner.modal__order 
         p Спасибо за вашу заявку! В ближайшее время с Вами свяжутся наши менеджеры!
-    

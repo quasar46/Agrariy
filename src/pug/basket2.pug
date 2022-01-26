@@ -1,0 +1,96 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a Корзина
+
+                    .basket.inner-block
+                        .inner-block__header
+                            h2.inner-block__title Корзина
+                        .basket__wrapper 
+                            //- item basket
+                            .basket__item.item 
+                                .item__picture 
+                                    img(src="img/basket/item.jpg" alt="")
+                                .item__info 
+                                    p.item__title Колесо FARMFLEX 023270.03 330x50
+                                    .item__article 
+                                        span Артикул:&nbsp;
+                                        p 023270.03
+                                    .item__have 
+                                        span
+                                            img(src="img/icons/galka.svg" alt="")
+                                        p В наличии
+                                    .item__text     
+                                        p 023270.03 Колесо в сборе 
+                                        p FARMFLEX/330x50/LR/63S/PB/C2/16X44/FKL/RAL9005
+                                .item__price 
+                                    span 5 574
+                                        i ₽
+                                .item__calc 
+                                    button.minus
+                                        img(src="img/icons/minus.svg" alt="")
+                                    span 2
+                                    button.plus
+                                        img(src="img/icons/plus.svg" alt="")
+                                .item__price 
+                                    span 11 148
+                                        i ₽
+                                .item__cross 
+                                    img(src="img/icons/cross2.svg" alt="")
+                            //- item basket
+                            .basket__item.item 
+                                .item__picture 
+                                    img(src="img/basket/item.jpg" alt="")
+                                .item__info 
+                                    p.item__title Колесо FARMFLEX 023270.03 330x50
+                                    .item__article 
+                                        span Артикул:&nbsp;
+                                        p 023270.03
+                                    .item__have 
+                                        span
+                                            img(src="img/icons/galka.svg" alt="")
+                                        p В наличии
+                                    .item__text     
+                                        p 023270.03 Колесо в сборе 
+                                        p FARMFLEX/330x50/LR/63S/PB/C2/16X44/FKL/RAL9005
+                                .item__price 
+                                    span 5 574
+                                        i ₽
+                                .item__calc 
+                                    button.minus
+                                        img(src="img/icons/minus.svg" alt="")
+                                    span 2
+                                    button.plus
+                                        img(src="img/icons/plus.svg" alt="")
+                                .item__price 
+                                    span 11 148
+                                        i ₽
+                                .item__cross 
+                                    img(src="img/icons/cross2.svg" alt="")
+
+                        .basket__footer 
+                            p Итого к оплате:
+                            p.basket__fullprice 18 253 ₽
+                            div
+                            button.button Оформить заказ
+
+
+
+
+
+
+            include modules/footer
+        include modules/script

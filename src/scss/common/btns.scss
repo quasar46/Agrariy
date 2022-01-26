@@ -1,0 +1,81 @@
+.arrow1 {
+  width: 52px;
+  height: 64px;
+  border-radius: 20px 5px 20px 5px;
+  background: #ff5700;
+  background-image: url("../img/icons/arrow-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  @media (max-width: 1366px) {
+    width: 42px;
+    height: 52px;
+  }
+}
+
+.arrow2 {
+  width: 52px;
+  height: 64px;
+  border-radius: 20px 5px 20px 5px;
+  background: #c5c7c4;
+  background-image: url("../img/icons/arrow-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  @media (max-width: 1366px) {
+    width: 42px;
+    height: 52px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: #ff5700;
+  align-self: start;
+  height: 67px;
+  padding: 0 40px;
+  border-radius: 20px 5px 20px 5px;
+  cursor: pointer;
+  @media (max-width: 1366px) {
+    font-size: 16px;
+    padding: 0 30px;
+    height: 56px;
+  }
+}
+
+.button-fixed {
+  position: fixed;
+  display: flex;
+  bottom: 50px;
+  right: 0;
+  border-radius: 5px 0 0 20px;
+  overflow: hidden;
+  z-index: 100;
+  width: 136px;
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    height: 67px;
+    width: 50%;
+    &:first-child {
+      border-right: 1px solid #fff;
+    }
+    @media (max-width: 1366px) {
+      height: 56px;
+    }
+  }
+  @media (max-width: 1024px) {
+    bottom: 40px;
+  }
+  @media (max-width: 360px) {
+    bottom: 30px;
+  }
+}

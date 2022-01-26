@@ -9,73 +9,72 @@ html(lang="ru")
                 include modules/aside
 
                 .hero.inner-block
-                    .hero__search 
-                        input(type="search" placeholder="Поиск")
                     .hero__slider 
                         .hero__slide
                             .hero__item
                                 img.hero__back(src="img/header/banner.jpg" alt="")
-                                p.hero__title Сервис и запасные части для сельхозтехники
+                                p.hero__title Сервис и запасные части для сельхоз техники
                                 a.hero__button.button(href="") Подробнее
                         .hero__slide
                             .hero__item
                                 img.hero__back(src="img/header/banner.jpg" alt="")
-                                p.hero__title Сервис и запасные части для сельхозтехники
+                                p.hero__title Сервис и запасные части для сельхоз техники
                                 a.hero__button.button(href="") Подробнее
                         .hero__slide
                             .hero__item
                                 img.hero__back(src="img/header/banner.jpg" alt="")
-                                p.hero__title Сервис и запасные части для сельхозтехники
+                                p.hero__title Сервис и запасные части для сельхоз техники
                                 a.hero__button.button(href="") Подробнее
                 .content
-                    .news-inner.inner-block
-                        .news-inner__header.content__header
+                    .news-index.inner-block
+                        .news-index__header.inner-block__header
                             h2.title Новости
                             a(href="") Смотреть все
-                        .news-inner__slider 
-                            .news-inner__slide 
-                                .news-inner__item 
+                        .news-index__slider 
+                            .news-index__slide 
+                                .news-index__item 
                                     img(src="img/news/1.jpg" alt="")
                                     date 15 ноября 2021
                                     p Рынок сельхозтехники в 2022 году: спрос вырастет, дефицит на оборудование останется
-                            .news-inner__slide 
-                                .news-inner__item 
+                            .news-index__slide 
+                                .news-index__item 
                                     img(src="img/news/2.jpg" alt="")
                                     date 30 октября 2021
                                     p Как «умное производство» меняет агросектор
-                            .news-inner__slide 
-                                .news-inner__item 
+                            .news-index__slide 
+                                .news-index__item 
                                     img(src="img/news/3.jpg" alt="")
                                     date 21 ноября 2021
                                     p Российские производители представили сельхозтехнику в рамках экспозиции на UZAGRO…
-                            .news-inner__slide 
-                                .news-inner__item 
+                            .news-index__slide 
+                                .news-index__item 
                                     img(src="img/news/4.jpg" alt="")
                                     date 11 октября 2021
                                     p Российские производители Грязинский завод приступил к выпуску новых культиваторов…
-                            .news-inner__slide 
-                                .news-inner__item 
+                            .news-index__slide 
+                                .news-index__item 
                                     img(src="img/news/1.jpg" alt="")
                                     date 15 ноября 2021
                                     p Рынок сельхозтехники в 2022 году: спрос вырастет, дефицит на оборудование останется
 
                     .about-inner.inner-block
-                        .about-inner__wrapper
-                            .about-inner__block
-                                .about-inner__title.content__header
-                                    h2.title О компании
-                                .about-inner__text
-                                    p Компания ООО "Аграрий" предлагает со склада и на заказ оригинальные и альтернативные запасные части, расходные материалы, навесное оборудование ведущих мировых производителей для самоходной и прицепной сельскохозяйственной техники.
-                                    p Мы выполняем следующие различные работы по ремонту и сервисному обслуживанию: диагностику и ремонт сельскохозяйственной техники на объекте заказчика, проведение регламентных работ сельскохозяйственной техники, крупноузловой ремонт, диагностику и ремонт двигателей, заправку кондиционеров, ремонт радиаторов, замену пластиковых бачков на алюминиевые и многое другое.
-                                    p Специалисты нашей компании оказывают квалифицированную помощь в выборе необходимых Вам запасных частей, расходных материалов и составлении заказа. Для постоянных клиентов разработаны специальные выгодные условия сотрудничества.
-                                button.about-inner__button.button Подробнее
-                            .about-inner__block
-                                img(src="img/about/graphic.png" alt="")
+                        .about-inner__wrapper.block-picture
+                            .block-picture__wrapper
+                                .block-picture__item
+                                    .inner-block__header
+                                        h2.title О компании
+                                    .block-picture__text
+                                        p Компания ООО "Аграрий" предлагает со склада и на заказ оригинальные и альтернативные запасные части, расходные материалы, навесное оборудование ведущих мировых производителей для самоходной и прицепной сельскохозяйственной техники.
+                                        p Мы выполняем следующие различные работы по ремонту и сервисному обслуживанию: диагностику и ремонт сельскохозяйственной техники на объекте заказчика, проведение регламентных работ сельскохозяйственной техники, крупноузловой ремонт, диагностику и ремонт двигателей, заправку кондиционеров, ремонт радиаторов, замену пластиковых бачков на алюминиевые и многое другое.
+                                        p Специалисты нашей компании оказывают квалифицированную помощь в выборе необходимых Вам запасных частей, расходных материалов и составлении заказа. Для постоянных клиентов разработаны специальные выгодные условия сотрудничества.
+                                    button.about-inner__button.button Подробнее
+                                .block-picture__item
+                                    img(src="img/about/graphic.png" alt="")
 
                     .partners-inner.inner-block 
-                        .partners-inner__header.content__header
+                        .partners-inner__header.inner-block__header
                             h2.title Партнеры
-                            a(href="") Читать Подробнее
+                            a(href="partners.html") Читать Подробнее
                         .partners-inner__slider
                             .partners-inner__slide 
                                 a(href="").partners-inner__item 
@@ -89,23 +88,8 @@ html(lang="ru")
                             .partners-inner__slide 
                                 a(href="").partners-inner__item 
                                     img(src="img/partners/4.svg" alt="")
-                            .partners-inner__slide 
-                                a(href="").partners-inner__item 
-                                    img(src="img/partners/1.svg" alt="")
 
-                    .questions-inner.inner-block 
-                        .questions-inner__wrapper 
-                            .questions-inner__block
-                                img(src="img/questions/graphic.png" alt="")
-                            .questions-inner__block
-                                .questions-inner__header.content__header 
-                                    h2.title Есть вопросы?
-                                form.questions-inner__form
-                                    input(type="text" placeholder="ФИО")
-                                    input.phone-input(type="text" placeholder="")
-                                    textarea(placeholder="Ввелите свой вопрос")
-                                    p Нажимая отправить, я принимаю условия <a href="">пользовательского соглашения</a> и условия обработки <a href="">персональных данных</a>
-                                    button(type="submit").questions-inner__button.button Отправить
+                    include modules/questions
 
 
 

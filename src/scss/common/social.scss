@@ -1,0 +1,23 @@
+.social__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  p {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  a {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #c5c7c4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

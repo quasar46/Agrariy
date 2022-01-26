@@ -1,0 +1,31 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a Корзина
+
+                    .basket.inner-block
+                        .inner-block__header
+                            h2.inner-block__title Корзина
+                        .basket__empty 
+                            img(src="img/basket/basket-empty.jpg" alt="")
+                            p В корзине пока ничего нет, но есть отличная возможность это исправить!
+                            a.button(href="catalog.html")  В каталог
+
+
+
+
+            include modules/footer
+        include modules/script

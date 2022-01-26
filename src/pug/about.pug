@@ -1,0 +1,84 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Компания
+                            li 
+                                span |
+                            li 
+                                a(href="") О компании
+
+                    .about
+                        h2.inner-block__title О компании
+                        //- статистика
+                        .about__stats.inner-block
+                            .about__stats-item
+                                span С 2009
+                                p поставляем российским аграриям импортную сельхозтехнику
+                            .about__stats-item
+                                span в 10
+                                p регионах Центральной России представлена наша продукция
+                            .about__stats-item
+                                span ТОП 10
+                                p успешных дилеров импортной сельхозтехники в России 
+                            .about__stats-item
+                                span лидер
+                                p по географическому охвату рынка на территории России
+                        //- запасные части
+                        .about__inner.block-picture.inner-block
+                            .block-picture__wrapper
+                                .block-picture__item.block-picture__item--mode
+                                    img(src="img/about/graphic2.png" alt="")
+                                .block-picture__item.block-picture__item--mode
+                                    .inner-block__header
+                                        h2.title Запасные части
+                                    .block-picture__text
+                                        p Компания ООО «Аграрий» предлагает со склада и на заказ оригинальные и альтернативные запасные части, расходные материалы, навесное оборудование ведущих мировых производителей для самоходной и прицепной сельскохозяйственной техники:
+                                        ul
+                                            li ДК самоходной технике зарубежных производителей: JOHN DEERE, MANITOU, CAT, Challenger, CLAAS, JCB, Bobcat, Massey Ferguson, New Holland и многим другим
+                                            li К прицепной сельхозтехнике производства: Amazone, Lemken, Kverneland, Geringhoff, Kuhn, Horsh, Kockerling, Fliegl, Schulte, Einböck, Gregoire Besson, Krone, Gaspardo, Grimme, Vaderstad, Hawe, Annaburger, BVL, Degelman и многих других
+                                            li К двигателям: JOHN DEERE, СATERPILLAR (CAT), SISU, PERKINS, MERCEDES, СUMMINS
+                                            li Подшипники FKL
+                                            li Прикатывающие катки и колеса OTICO
+                                            li Запчасти KABAT
+                                            li Фильтрующие элементы: MANN FILTER, Donaldson, Fleetgard, Baldwin, HIFI, SF
+                                            li Колеса и комплектующие: Michelin, VOLTYRE, BKT, Firestone, Alliance
+                            .block-picture__footer
+                                p Специалисты нашей компании оказывают квалифицированную помощь в выборе необходимых вам запасных частей, расходных материалов и составлении заказа. Для постоянных клиентов разработаны специальные выгодные условия сотрудничества.
+                        //- сервис
+                        .about__inner.block-picture.inner-block
+                            .block-picture__wrapper
+                                .block-picture__item
+                                    .inner-block__header
+                                        h2.title Сервис
+                                    .block-picture__text
+                                        ul 
+                                            li Диагностика и ремонт сельскохозяйственной техники на объекте заказчика
+                                            li Проведение регламентных работ сельскохозяйственной техники
+                                            li Крупноузловой ремонт (двигатели, КПП, мосты), в условиях нашей мастерской с последующими пусконаладочными работами по установке агрегата на технику и гарантийным обслуживанием
+                                            li Диагностика и ремонт двигателей JOHN DEERE, СATERPILLAR (CAT), SISU, PERKINS, MERCEDES
+                                            li Заправка кондиционеров
+                                            li Текущие и сезонные дефектовки техники. Ко всем работам предоставляются дефектовочные ведомости и фотоотчеты с выявленными неисправностями
+                                            li Восстановление отверстий в мостах тракторов, посадочных отверстий под пальцы и т.д. методом наплавки, расточки и завтуливания
+                                            li Обрезинивание металлических катков на самоходную и прицепную технику (в частности обрезинивание катков гусеничных тракторов Challenger)
+                                .block-picture__item
+                                    img(src="img/about/graphic3.png" alt="")
+                            .block-picture__footer 
+                                p Специалисты нашей компании оказывают квалифицированную помощь в выборе необходимых вам запасных частей, расходных материалов и составлении заказа. Для постоянных клиентов разработаны специальные выгодные условия сотрудничества.
+
+                        include modules/questions
+
+            include modules/footer
+        include modules/script

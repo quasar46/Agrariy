@@ -17,14 +17,14 @@ html(lang="ru")
                                 a Контакты
 
                     .contacts.inner-block
-                        .contacts__header.content__header
-                            h2.title Контакты
+                        .contacts__header.inner-block__header
+                            h2.inner-block__title Контакты
                         .contacts__block 
-                            .contacts__tabs#tabs
-                                .tabs__header
-                                    a(href="#content1").active Главный офис 
-                                    a(href="#content2") Сервисный центр
-                                .tabs__content#content1
+                            .contacts__tabs.tabs
+                                ul.tabs__header
+                                    li.active Главный офис 
+                                    li Сервисный центр
+                                .tabs__content.active
                                     .contacts__info
                                         .contacts__item
                                             p.contacts__title Адрес:
@@ -42,13 +42,67 @@ html(lang="ru")
                                         p.contacts__wide Наш офис располагается на 4-м этаже, направо от лифта.
                                         button.button Маршрут в Яндекс навигаторе
                                         a(href="" download)
-                                            img(src="img/icons/download.svg", alt="скачать схему проезда") 
+                                            img(src="img/icons/download.svg" alt="скачать схему проезда") 
                                             span Скачать схему проезда
                                     .contacts__map
-                                       <iframe src="https://yandex.ru/map-widget/v1/-/CCU5EWbAcC" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-                                
-                                
-                                   
+                                        <iframe src="https://yandex.ru/map-widget/v1/-/CCU5EWbAcC" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                                .tabs__content
+                                    .contacts__info
+                                        .contacts__item
+                                            p.contacts__title Адрес:
+                                            p 305010, Курская обл., п. Юбилейный,
+                                            p ул. Индустриальная, зд. 7
+                                        .contacts__item
+                                            p.contacts__title Режим работы:
+                                            p Понедельник – пятница: с 8:30 до 17:30 
+                                            span (московское время) 
+                                            p Суббота – воскресенье: выходной
+                                        .contacts__item
+                                            p.contacts__title GPS – координаты:
+                                            p Широта 56°22’17N (56.371258)
+                                            p Долгота 38°9’48E (38.163317)
+                                        p.contacts__wide Как доехать из города Курска
+                                        button.button Маршрут в Яндекс навигаторе
+                                        a(href="" download)
+                                            img(src="img/icons/download.svg" alt="скачать схему проезда") 
+                                            span Скачать схему проезда
+                                    .contacts__map
+                                        <iframe src="https://yandex.ru/map-widget/v1/-/CCU5EWbAcC" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+
+                    .feedback.inner-block
+                        h2.feedback__title.title Свяжитесь с нами
+                        .feedback__content 
+                            .feedback__block.contacts__links
+                                a(href="mailto:info@agrariy.center") 
+                                    img(src="img/icons/mail.svg" alt="")
+                                    span info@agrariy.center
+                                a(href="tel:+78004443400") 
+                                    img(src="img/icons/phone.svg" alt="")
+                                    span 8 800 444 34 00
+                            .feedback__block.social__links
+                                p В мессенджерах:
+                                a(href="")
+                                    img(src="img/icons/whatsapp-icon.svg" alt="")
+                                a(href="")
+                                    img(src="img/icons/viber-icon.svg" alt="")
+                                a(href="")
+                                    img(src="img/icons/telegram-icon.svg" alt="")
+                                a(href="")
+                                    img(src="img/icons/skype-icon.svg" alt="")
+                            .feedback__block.social__links
+                                p В соцсетях:
+                                a(href="")
+                                    img(src="img/icons/vk-icon.svg" alt="")
+                                a(href="")
+                                    img(src="img/icons/fb-icon.svg" alt="")
+                                a(href="")
+                                    img(src="img/icons/instagram-icon.svg" alt="")
+                                a(href="")
+                                    img(src="img/icons/youtube-icon.svg" alt="")
+
+                    include modules/questions
+
+
 
             include modules/footer
         include modules/script

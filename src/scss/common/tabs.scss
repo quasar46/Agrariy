@@ -1,15 +1,16 @@
-
-
 .tabs__content {
+  display: none;
+  justify-content: space-between;
+  &.active {
     display: flex;
-    justify-content: space-between;
+  }
 }
 
 .tabs__header {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  a {
+  li {
     color: #969696;
     border: 1px solid #969696;
     border-radius: 10px;
@@ -22,7 +23,15 @@
       border-color: #ff5700;
       overflow: hidden;
     }
+    &:first-child.active {
+      margin-right: -20px;
+      background: #fff;
+      z-index: 1;
+    }
+    &:last-child.active {
+      margin-left: -20px;
+      background: #fff;
+      z-index: 100;
+    }
   }
 }
-
-

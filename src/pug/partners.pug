@@ -1,0 +1,62 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Компания
+                            li 
+                                span |
+                            li 
+                                a(href="") Партнеры
+
+                    .partners.inner-block
+                        h2.inner-block__title Партнеры
+                        .partners__inner 
+                            .partners__item
+                                img(src="img/partners/1.svg" alt="")
+                                p.partners__title «FKL»
+                                p.partners__text Официальный Европейский поставщик подшипниковой продукции для производителей сельскохозяйственной техники.
+                                a.partners__link(href="https://www.rusfkl.ru" target="_blank") 
+                                    img(src="img/icons/world.svg" alt="")
+                                    span www.rusfkl.ru
+                            .partners__item
+                                img(src="img/partners/2.svg" alt="")
+                                p.partners__title «OTICO»
+                                p.partners__text Завод по производству колес, бандажей и катков для сельскохозяйственной техники во Франции.
+                                a.partners__link(href="https://www.otico.shop" target="_blank") 
+                                    img(src="img/icons/world.svg" alt="")
+                                    span www.otico.shop
+                            .partners__item
+                                img(src="img/partners/3.svg" alt="")
+                                p.partners__title «KABAT»
+                                p.partners__text Американский бренд запасных частей, являющийся поставщиком оригинальных комплектующих для сельскохозяйственной техники.
+                                a.partners__link(href="https://www.kabat.com.ru" target="_blank") 
+                                    img(src="img/icons/world.svg" alt="")
+                                    span www.kabat.com.ru
+                            .partners__item
+                                img(src="img/partners/4.svg" alt="")
+                                p.partners__title «KRAMP»
+                                p.partners__text Крупнейшая в Европе дистрибьюторская сеть запасных частей для сельскохозяйственной техники.
+                                a.partners__link(href="https://www.kramp.ru" target="_blank") 
+                                    img(src="img/icons/world.svg" alt="")
+                                    span www.kramp.ru
+
+
+                    include modules/questions
+
+
+
+
+            include modules/footer
+        include modules/script

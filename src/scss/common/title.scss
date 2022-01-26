@@ -1,0 +1,11 @@
+.title {
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  @media (max-width: 1366px) {
+    font-size: 44px;
+  }
+  @media (max-width: 360px) {
+    font-size: 32px;
+  }
+}

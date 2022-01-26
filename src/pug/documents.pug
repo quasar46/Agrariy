@@ -1,0 +1,58 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Компания
+                            li 
+                                span |
+                            li 
+                                a Документы
+
+                    .documents.inner-block
+                        .inner-block__header
+                            h2.inner-block__title Документы
+                        .documents__wrapper 
+                            .documents__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="")  
+                                    span PDF 
+                                    img(src="img/icons/download2.svg", alt="")
+                            .documents__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="")  
+                                    span PDF 
+                                    img(src="img/icons/download2.svg", alt="")
+                            .documents__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="")  
+                                    span PDF 
+                                    img(src="img/icons/download2.svg", alt="")
+                            .documents__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="")  
+                                    span PDF 
+                                    img(src="img/icons/download2.svg", alt="")
+                            .documents__item
+                                p Сертификат соответствия требованиям «Технический регламент о требованиях пожарной безопасности»
+                                a(href="")  
+                                    span PDF 
+                                    img(src="img/icons/download2.svg", alt="")
+
+
+
+
+
+            include modules/footer
+        include modules/script

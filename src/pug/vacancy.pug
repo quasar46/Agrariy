@@ -1,0 +1,48 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Компания
+                            li 
+                                span |
+                            li 
+                                a(href="") Вакансии
+
+                    .vacancy.inner-block
+                        h2.inner-block__title Вакансии
+                        .vacancy__wrapper 
+                            a(href="").vacancy__item
+                                p Старший менеджер проектов
+                                button.arrow2 
+                            a(href="").vacancy__item
+                                p Сборщик электрических машин и аппаратов
+                                button.arrow2 
+                            a(href="").vacancy__item
+                                p Руководитель сервисного центра
+                                button.arrow2 
+                            a(href="").vacancy__item
+                                p Механик-автослесарь
+                                button.arrow2 
+                            a(href="").vacancy__item
+                                p Руководитель сервисного центра
+                                button.arrow2 
+
+                    include modules/questions
+
+
+
+
+            include modules/footer
+        include modules/script

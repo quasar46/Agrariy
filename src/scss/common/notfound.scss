@@ -1,0 +1,20 @@
+.notfound {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .inner-block__title {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 30px;
+    text-align: center;
+    @media (max-width: 1366px) {
+      font-size: 16px;
+    }
+  }
+  .button {
+    align-self: center;
+  }
+}

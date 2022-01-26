@@ -1,0 +1,66 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Новости
+                            li 
+                                span |
+                            li
+                                a(href="") Галерея
+                            li 
+                                span |
+                            li 
+                                a Видеогалерея
+
+                    .gallery.inner-block
+                        .inner-block__header
+                            h2.inner-block__title Видеогалерея
+                        .gallery__wrapper 
+                            .gallery__item 
+                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+                            .gallery__item 
+                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+                            .gallery__item 
+                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+                            .gallery__item 
+                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+                            .gallery__item 
+                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+                            .gallery__item 
+                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+
+
+
+
+            include modules/footer
+        include modules/script

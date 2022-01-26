@@ -1,0 +1,138 @@
+.basket {
+  .item {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+    border: 1px solid #c5c7c4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .item__calc {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 20px;
+    }
+    button {
+      background-color: #ececec;
+      width: 37px;
+      height: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &.minus {
+        border-radius: 5px 20px 5px 20px;
+      }
+      &.plus {
+        border-radius: 20px 5px 20px 5px;
+      }
+    }
+  }
+}
+
+.basket__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__price {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.item__cross {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ececec;
+  cursor: pointer;
+}
+
+.item__info {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-bottom: 10px;
+  }
+}
+
+.item__article {
+  display: flex;
+  align-items: center;
+}
+
+.item__have {
+  display: flex;
+  align-items: center;
+  span {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #7dc95e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+}
+
+.item__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.item__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.basket__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-between;
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+
+  .button {
+    margin-top: 30px;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+}
+
+.item__picture {
+  max-width: 166px;
+  width: 100%;
+}
+
+.basket__empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-bottom: 50px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .button {
+    align-self: center;
+  }
+}

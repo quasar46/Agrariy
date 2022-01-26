@@ -1,6 +1,12 @@
 .partners-inner__slider {
   .slick-list {
-    // margin: 0 -15px;
+    margin: 0 -15px;
+    @media (max-width: 1024px) {
+      margin: 0;
+    }
+    @media (max-width: 360px) {
+      margin-right: -200px;
+    }
   }
   .slick-dots {
     position: absolute;
@@ -18,4 +24,7 @@
   border-radius: 10px;
   height: 130px;
   margin: 0 15px;
+  @media (max-width: 1366px) {
+    height: 94px;
+  }
 }

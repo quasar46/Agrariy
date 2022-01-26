@@ -1,0 +1,117 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Запасные части
+
+                    .catalog
+                        .inner-block__header
+                            h2.inner-block__title Запасные части
+                        .catalog__wrapper 
+                            .catalog__aside.catalog-aside 
+                                //- бренды
+                                .catalog-aside__block 
+                                    .catalog-aside__caption.toggle
+                                        p Бренд:
+                                        img(src="img/icons/arrow.svg" alt="")
+                                    ul 
+                                        li 
+                                            input(type="checkbox" id="inp1")
+                                            label(for="inp1") ALPEGO
+                                        li 
+                                            input(type="checkbox" id="inp2")
+                                            label(for="inp2") BECKER
+                                        li 
+                                            input(type="checkbox" id="inp3")
+                                            label(for="inp3") ALPEGO
+                                        li 
+                                            input(type="checkbox" id="inp4")
+                                            label(for="inp4") BECKER
+                                        li 
+                                            input(type="checkbox" id="inp5")
+                                            label(for="inp5") BECKER
+                                        li 
+                                            input(type="checkbox" id="inp6")
+                                            label(for="inp6") BECKER
+                                        li 
+                                            input(type="checkbox" id="inp7")
+                                            label(for="inp7") BECKER
+                                //- категория
+                                .catalog-aside__block 
+                                    .catalog-aside__caption.toggle
+                                        p Категория:
+                                        img(src="img/icons/arrow.svg" alt="")
+                                    ul 
+                                        li Для тракторов
+                                        li Для комбайнов
+                                        li Для тракторов
+                                        li Для комбайнов
+                                        li Для тракторов
+                                        li Для комбайнов
+                                        li Для тракторов
+                                        li Для комбайнов
+                                //- наличие в магазинах
+                                .catalog-aside__block 
+                                    .catalog-aside__caption.toggle
+                                        p Наличие в магазинах:
+                                        img(src="img/icons/arrow.svg" alt="")
+                                    ul 
+                                        li 
+                                            input(type="radio" id="radio1" name="radio")
+                                            label(for="radio1") Только в наличии
+                                        li 
+                                            input(type="radio" id="radio2" name="radio")
+                                            label(for="radio2") Под заказ
+                                //- цена
+                                .catalog-aside__block.catalog-aside__price
+                                    .catalog-aside__caption
+                                        p Цена:
+                                    .catalog-aside__price 
+                                        input(type="text" placeholder="1 000")
+                                        span -
+                                        input(type="text" placeholder="100 000")
+                                        div.catalog-aside__slide
+                                            span.catalog-aside__dot 
+                                            span.catalog-aside__back
+
+                                //- страна производитель
+                                .catalog-aside__block
+                                    .catalog-aside__caption.toggle
+                                        p Страна производитель:
+                                        img(src="img/icons/arrow.svg" alt="")
+                                    ul 
+                                        li 
+                                            input(type="checkbox")
+                                            label(for="") Германия
+                                        li 
+                                            input(type="checkbox")
+                                            label(for="") США
+                                        li 
+                                            input(type="checkbox")
+                                            label(for="") Россия
+                                        li 
+                                            input(type="checkbox")
+                                            label(for="") Россия
+                                        li 
+                                            input(type="checkbox")
+                                            label(for="") Россия
+                            .catalog__content.catalog-content 
+                                .search.search--inner
+                                    input(type="search" placeholder="Поиск")
+
+
+
+            include modules/footer
+        include modules/script
