@@ -7,53 +7,53 @@ html(lang="ru")
             .page
                 include modules/aside
                 .content
-                    .breadcrumbs 
-                        ul 
+                    .breadcrumbs
+                        ul
                             li
                                 a(href="/") Главная 
-                            li 
+                            li
                                 span |
                             li
                                 a(href="") Запасные части
 
-                    .catalog
+                    .catalog.inner-block
                         .inner-block__header
-                            h2.inner-block__title Запасные части
-                        .catalog__wrapper 
-                            .catalog__aside.catalog-aside 
+                            h1.inner-block__title Запасные части
+                        .catalog__wrapper
+                            .catalog__aside.catalog-aside
                                 //- бренды
-                                .catalog-aside__block 
+                                .catalog-aside__block
                                     .catalog-aside__caption.toggle
                                         p Бренд:
                                         img(src="img/icons/arrow.svg" alt="")
-                                    ul 
-                                        li 
+                                    ul
+                                        li
                                             input(type="checkbox" id="inp1")
                                             label(for="inp1") ALPEGO
-                                        li 
+                                        li
                                             input(type="checkbox" id="inp2")
                                             label(for="inp2") BECKER
-                                        li 
+                                        li
                                             input(type="checkbox" id="inp3")
                                             label(for="inp3") ALPEGO
-                                        li 
+                                        li
                                             input(type="checkbox" id="inp4")
                                             label(for="inp4") BECKER
-                                        li 
+                                        li
                                             input(type="checkbox" id="inp5")
                                             label(for="inp5") BECKER
-                                        li 
+                                        li
                                             input(type="checkbox" id="inp6")
                                             label(for="inp6") BECKER
-                                        li 
+                                        li
                                             input(type="checkbox" id="inp7")
                                             label(for="inp7") BECKER
                                 //- категория
-                                .catalog-aside__block 
+                                .catalog-aside__block
                                     .catalog-aside__caption.toggle
                                         p Категория:
                                         img(src="img/icons/arrow.svg" alt="")
-                                    ul 
+                                    ul
                                         li Для тракторов
                                         li Для комбайнов
                                         li Для тракторов
@@ -63,27 +63,27 @@ html(lang="ru")
                                         li Для тракторов
                                         li Для комбайнов
                                 //- наличие в магазинах
-                                .catalog-aside__block 
+                                .catalog-aside__block
                                     .catalog-aside__caption.toggle
                                         p Наличие в магазинах:
                                         img(src="img/icons/arrow.svg" alt="")
-                                    ul 
-                                        li 
+                                    ul
+                                        li
                                             input(type="radio" id="radio1" name="radio")
                                             label(for="radio1") Только в наличии
-                                        li 
+                                        li
                                             input(type="radio" id="radio2" name="radio")
                                             label(for="radio2") Под заказ
                                 //- цена
                                 .catalog-aside__block.catalog-aside__price
                                     .catalog-aside__caption
                                         p Цена:
-                                    .catalog-aside__price 
+                                    .catalog-aside__price
                                         input(type="text" placeholder="1 000")
                                         span -
                                         input(type="text" placeholder="100 000")
                                         div.catalog-aside__slide
-                                            span.catalog-aside__dot 
+                                            span.catalog-aside__dot
                                             span.catalog-aside__back
 
                                 //- страна производитель
@@ -91,27 +91,104 @@ html(lang="ru")
                                     .catalog-aside__caption.toggle
                                         p Страна производитель:
                                         img(src="img/icons/arrow.svg" alt="")
-                                    ul 
-                                        li 
+                                    ul
+                                        li
                                             input(type="checkbox")
                                             label(for="") Германия
-                                        li 
+                                        li
                                             input(type="checkbox")
                                             label(for="") США
-                                        li 
+                                        li
                                             input(type="checkbox")
                                             label(for="") Россия
-                                        li 
+                                        li
                                             input(type="checkbox")
                                             label(for="") Россия
-                                        li 
+                                        li
                                             input(type="checkbox")
                                             label(for="") Россия
-                            .catalog__content.catalog-content 
+                            .catalog__content.catalog-content
                                 .search.search--inner
                                     input(type="search" placeholder="Поиск")
+                                .catalog-content__filter
+                                    button.button.price-up#priceUp
+                                        span По возростанию цены
+                                        img(src="img/icons/arrow.svg" alt="")
+                                    .catalog-content__buttons
+                                        button.active
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="3" rx="1" fill="#C5C7C4"/><rect x="2" y="10" width="20" height="3" rx="1" fill="#C5C7C4"/><rect x="2" y="18" width="20" height="3" rx="1" fill="#C5C7C4"/></svg>
+                                        button
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="9" height="9" rx="1" fill="#C5C7C4"/><rect x="2" y="13" width="9" height="9" rx="1" fill="#C5C7C4"/><rect x="13" y="2" width="9" height="9" rx="1" fill="#C5C7C4"/><rect x="13" y="13" width="9" height="9" rx="1" fill="#C5C7C4"/></svg>
+                                        button
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="3" width="14" height="3" rx="1" fill="#C5C7C4"/><rect x="8" y="10" width="14" height="3" rx="1" fill="#C5C7C4"/><rect x="8" y="18" width="14" height="3" rx="1" fill="#C5C7C4"/><rect width="3" height="3" rx="1" transform="matrix(-1 0 0 1 5 3)" fill="#C5C7C4"/><rect width="3" height="3" rx="1" transform="matrix(-1 0 0 1 5 10)" fill="#C5C7C4"/><rect width="3" height="3" rx="1" transform="matrix(-1 0 0 1 5 18)" fill="#C5C7C4"/></svg>
+                                .catalog-content__main
+                                    .catalog-content__wrapper.catalog-content__wrapper--filter1
+                                        //item
+                                        .item-product
+                                            //.item-product__info
+                                            p.item-product__title Колесо FARMFLEX 023270.03 330x50
+                                            .item-product__article
+                                                span Артикул:&nbsp;
+                                                p 023270.03
+                                            .item-product__have
+                                                span
+                                                p В наличии
+                                            .item-product__description
+                                                p FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...
+                                            .item-product__price
+                                                span 5 574
+                                                    i ₽
+                                            .item-product__favorite
+                                            button.button.item-product__basket В корзинy
+                                            .item-product__calc.hide
+                                                p В корзине
+                                                button.minus
+                                                    img(src="img/icons/minus.svg" alt="")
+                                                span 2
+                                                button.plus
+                                                    img(src="img/icons/plus.svg" alt="")
+                                        //item
+                                        .item-product
+                                            //.item-product__info
+                                            p.item-product__title Колесо FARMFLEX 023270.03 330x50
+                                            .item-product__article
+                                                span Артикул:&nbsp;
+                                                p 023270.03
+                                            .item-product__have
+                                                span
+                                                p В наличии
+                                            .item-product__description
+                                                p FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...
+                                            .item-product__price
+                                                span 5 574
+                                                    i ₽
+                                            .item-product__favorite
+                                            button.button.item-product__basket В корзинy
+                                            .item-product__calc.hide
+                                                p В корзине
+                                                button.minus
+                                                    img(src="img/icons/minus.svg" alt="")
+                                                span 2
+                                                button.plus
+                                                    img(src="img/icons/plus.svg" alt="")
 
 
+
+
+
+
+                                .pagination
+                                    a.active 1
+                                    a 2
+                                    a 3
+                                    a ...
+                                    a 120
+                                    a
+                                        img(src="img/icons/arrow.svg" alt="")
+
+
+                        #topscroll
+                            img(src="img/icons/arrow.svg" alt="скролл на верх")
 
             include modules/footer
         include modules/script

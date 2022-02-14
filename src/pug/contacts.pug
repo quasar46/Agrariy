@@ -18,8 +18,8 @@ html(lang="ru")
 
                     .contacts.inner-block
                         .contacts__header.inner-block__header
-                            h2.inner-block__title Контакты
-                        .contacts__block 
+                            h1.inner-block__title Контакты
+                        .contacts__block
                             .contacts__tabs.tabs
                                 ul.tabs__header
                                     li.active Главный офис 
@@ -27,82 +27,116 @@ html(lang="ru")
                                 .tabs__content.active
                                     .contacts__info
                                         .contacts__item
-                                            p.contacts__title Адрес:
-                                            p 305004, Курская обл., г.Курск, 
-                                            p ул. Димитрова Дом 76 Офис 403/3
-                                        .contacts__item
-                                            p.contacts__title Режим работы:
-                                            p Понедельник – пятница: с 8:30 до 17:30 
-                                            span (московское время) 
-                                            p Суббота – воскресенье: выходной
-                                        .contacts__item
-                                            p.contacts__title GPS – координаты:
-                                            p Широта 56°22’17N (56.371258)
-                                            p Долгота 38°9’48E (38.163317)
-                                        p.contacts__wide Наш офис располагается на 4-м этаже, направо от лифта.
-                                        button.button Маршрут в Яндекс навигаторе
-                                        a(href="" download)
+                                            .contacts__inner
+                                                h2.contacts__title Адрес:
+                                                p 305004, Курская обл., г.Курск, 
+                                                p ул. Димитрова Дом 76 Офис 403/3
+                                            .contacts__inner
+                                                h2.contacts__title GPS – координаты:
+                                                p Широта 56°22’17N (56.371258)
+                                                p Долгота 38°9’48E (38.163317)   
+                                        .contacts__item     
+                                            .contacts__inner
+                                                h2.contacts__title Режим работы:
+                                                p Понедельник – пятница: <br> с 8:30 до 17:30 
+                                                span (московское время) 
+                                                p.contacts__holiday Суббота – воскресенье: <br> выходной
+
+                                        .contacts__wide Наш офис располагается на 4-м этаже, направо от лифта.
+                                        button.hover.button Маршрут ЯНавигаторе
+                                        a.hover(href="" download).contacts__download
                                             img(src="img/icons/download.svg" alt="скачать схему проезда") 
                                             span Скачать схему проезда
-                                    .contacts__map
-                                        <iframe src="https://yandex.ru/map-widget/v1/-/CCU5EWbAcC" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                                    .contacts__map.inner-block__col
+                                        #map
+                                        .contacts__item.contacts__item-time.contacts__item-time--mobile
+                                            h2.contacts__title Режим работы:
+                                            .contacts__item-wrapper
+                                                p Понедельник – пятница:<br> с 8:30 до 17:30 <br> <span> (московское время) </span>
+                                                p Суббота – воскресенье:<br> выходной
+                                        p.contacts__wide.contacts__wide--mobile Наш офис располагается на 4-м этаже, направо от лифта.
+                                        button.hover.button.button--mobile Маршрут ЯНавигаторе
+                                        a.hover(href="" download).contacts__download.contacts__download--mobile
+                                            img(src="img/icons/download.svg" alt="скачать схему проезда") 
+                                            span Скачать схему проезда
+
                                 .tabs__content
                                     .contacts__info
                                         .contacts__item
-                                            p.contacts__title Адрес:
-                                            p 305010, Курская обл., п. Юбилейный,
-                                            p ул. Индустриальная, зд. 7
-                                        .contacts__item
-                                            p.contacts__title Режим работы:
-                                            p Понедельник – пятница: с 8:30 до 17:30 
-                                            span (московское время) 
-                                            p Суббота – воскресенье: выходной
-                                        .contacts__item
-                                            p.contacts__title GPS – координаты:
-                                            p Широта 56°22’17N (56.371258)
-                                            p Долгота 38°9’48E (38.163317)
-                                        p.contacts__wide Как доехать из города Курска
-                                        button.button Маршрут в Яндекс навигаторе
-                                        a(href="" download)
+                                            .contacts__inner
+                                                h2.contacts__title Адрес:
+                                                p 305010, Курская обл., п. Юбилейный, 
+                                                p ул. Индустриальная, зд. 7
+                                            .contacts__inner
+                                                h2.contacts__title GPS – координаты:
+                                                p Широта 56°22’17N (56.371258)
+                                                p Долгота 38°9’48E (38.163317)
+                                        .contacts__item 
+                                            .contacts__inner
+                                                h2.contacts__title Режим работы:
+                                                p Понедельник – пятница:<br> с 8:30 до 17:30 
+                                                span (московское время) 
+                                                p.contacts__holiday Суббота – воскресенье:<br> выходной
+                                        .contacts__wide 
+                                            button.toggle Как доехать из города Курска
+                                                img(src="img/icons/arrow.svg" alt="")
+                                            p По ул. Ильича, далее по ул.Цветочная выезд из города на трассу Курск-Щигры, поворот налево на Муравлево (ориентир — распределительный центр «Пятерочка»), через 700 метров поворот направо, через 500 метров справа располагается ООО «Аграрий»
+                                        button.hover.button Маршрут ЯНавигаторе
+                                        a.hover(href="" download).contacts__download
                                             img(src="img/icons/download.svg" alt="скачать схему проезда") 
                                             span Скачать схему проезда
-                                    .contacts__map
-                                        <iframe src="https://yandex.ru/map-widget/v1/-/CCU5EWbAcC" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                                    .contacts__map.inner-block__col
+                                        #map2
+                                        .contacts__item.contacts__item-time.contacts__item-time--mobile
+                                            h2.contacts__title Режим работы:
+                                            .contacts__item-wrapper
+                                                p Понедельник – пятница:<br> с 8:30 до 17:30 <br> <span> (московское время) </span>
+                                                p Суббота – воскресенье:<br> выходной
+                                        .contacts__wide.contacts__wide--mobile
+                                            button.toggle Как доехать из города Курска
+                                                img(src="img/icons/arrow.svg" alt="")
+                                            p По ул. Ильича, далее по ул.Цветочная выезд из города на трассу Курск-Щигры, поворот налево на Муравлево (ориентир — распределительный центр «Пятерочка»), через 700 метров поворот направо, через 500 метров справа располагается ООО «Аграрий»
+                                        button.hover.button.button--mobile Маршрут ЯНавигаторе
+                                        a.hover(href="" download).contacts__download.contacts__download--mobile
+                                            img(src="img/icons/download.svg" alt="скачать схему проезда") 
+                                            span Скачать схему проезда
 
                     .feedback.inner-block
                         h2.feedback__title.title Свяжитесь с нами
-                        .feedback__content 
+                        .feedback__content.inner-block__col
                             .feedback__block.contacts__links
-                                a(href="mailto:info@agrariy.center") 
+                                a.hover(href="mailto:info@agrariy.center") 
                                     img(src="img/icons/mail.svg" alt="")
                                     span info@agrariy.center
-                                a(href="tel:+78004443400") 
+                                a.hover(href="tel:+78004443400") 
                                     img(src="img/icons/phone.svg" alt="")
                                     span 8 800 444 34 00
                             .feedback__block.social__links
                                 p В мессенджерах:
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/whatsapp-icon.svg" alt="")
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/viber-icon.svg" alt="")
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/telegram-icon.svg" alt="")
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/skype-icon.svg" alt="")
                             .feedback__block.social__links
                                 p В соцсетях:
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/vk-icon.svg" alt="")
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/fb-icon.svg" alt="")
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/instagram-icon.svg" alt="")
-                                a(href="")
+                                a.hover(href="")
                                     img(src="img/icons/youtube-icon.svg" alt="")
 
                     include modules/questions
 
 
 
-            include modules/footer
+        include modules/footer
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
         include modules/script
+        script(src="js/map.js")

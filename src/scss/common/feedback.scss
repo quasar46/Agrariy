@@ -1,6 +1,9 @@
 .feedback {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1365px) {
+    flex-direction: column;
+  }
 }
 
 .feedback__content {
@@ -9,6 +12,11 @@
   grid-template-rows: 1fr 1fr;
   flex-wrap: wrap;
   grid-template-areas: "first second" "first last";
+  @media (max-width: 1365px) {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
 }
 
 .feedback__block {
@@ -22,5 +30,27 @@
     grid-area: last;
     width: 100%;
     margin-left: auto;
+    @media (max-width: 1365px) {
+      width: 33.33%;
+    }
+    @media (max-width: 1023px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 1365px) {
+    width: 33.33%;
+  }
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
+.feedback__title {
+  @media (max-width: 1365px) {
+    margin-bottom: 25px;
+  }
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
   }
 }

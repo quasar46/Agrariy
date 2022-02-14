@@ -26,41 +26,42 @@ html(lang="ru")
 
                     .gallery.inner-block
                         .inner-block__header
-                            h2.inner-block__title Видеогалерея
+                            h1.inner-block__title Видеогалерея
                         .gallery__wrapper 
-                            .gallery__item 
-                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                            .gallery__item
+                                a(data-fancybox="video-gallery" data-caption="Название видео" href="http://media.w3.org/2010/05/sintel/trailer.mp4")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра Торжественное открытие сервисного центра Торжественное открытие сервисного центра
+                            .gallery__item
+                                a(data-fancybox="video-gallery" data-caption="Название видео" href="http://media.w3.org/2010/05/sintel/trailer.mp4")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+                            .gallery__item
+                                a(data-fancybox="video-gallery" data-caption="Название видео" href="http://media.w3.org/2010/05/sintel/trailer.mp4")
+                                    img(src="img/pictures/video1.jpg" alt="")
+                                date  20 января 2022
+                                p Торжественное открытие сервисного центра
+                            .gallery__item
+                                a(data-fancybox="video-gallery" data-caption="Название видео" href="http://media.w3.org/2010/05/sintel/trailer.mp4")
                                     img(src="img/pictures/video1.jpg" alt="")
                                 date  20 января 2022
                                 p Торжественное открытие сервисного центра
                             .gallery__item 
-                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                a(data-fancybox="video-gallery" data-caption="Название видео" href="http://media.w3.org/2010/05/sintel/trailer.mp4")
                                     img(src="img/pictures/video1.jpg" alt="")
                                 date  20 января 2022
                                 p Торжественное открытие сервисного центра
                             .gallery__item 
-                                a(data-fancybox="video-gallery" href="https://youtube.com")
+                                a(data-fancybox="video-gallery" data-caption="Название видео" href="http://media.w3.org/2010/05/sintel/trailer.mp4")
                                     img(src="img/pictures/video1.jpg" alt="")
                                 date  20 января 2022
                                 p Торжественное открытие сервисного центра
-                            .gallery__item 
-                                a(data-fancybox="video-gallery" href="https://youtube.com")
-                                    img(src="img/pictures/video1.jpg" alt="")
-                                date  20 января 2022
-                                p Торжественное открытие сервисного центра
-                            .gallery__item 
-                                a(data-fancybox="video-gallery" href="https://youtube.com")
-                                    img(src="img/pictures/video1.jpg" alt="")
-                                date  20 января 2022
-                                p Торжественное открытие сервисного центра
-                            .gallery__item 
-                                a(data-fancybox="video-gallery" href="https://youtube.com")
-                                    img(src="img/pictures/video1.jpg" alt="")
-                                date  20 января 2022
-                                p Торжественное открытие сервисного центра
-
 
 
 
             include modules/footer
-        include modules/script
+        include modules/script        
+        script(src="js/jquery.fancybox.min.js")
+        script(src="js/video-fb.js")

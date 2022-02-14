@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+
+  a {
+    // margin-right: 15px;
+    max-width: 45px;
+    height: 45px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    height: 45px;
+    cursor: pointer;
+    &:last-child {
+      background: #ececec;
+    }
+    &.active {
+      background: #ff5700;
+      color: #fff;
+    }
+  }
+}

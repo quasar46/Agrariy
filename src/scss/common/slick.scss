@@ -9,9 +9,13 @@
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     width: 42px;
     height: 52px;
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s ease all;
   }
 }
 
@@ -51,13 +55,16 @@
     &.slick-active {
       background: #ff5700;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1365px) {
       width: 10px;
       height: 10px;
       margin-right: 8px;
     }
   }
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     bottom: -30px;
+  }
+  @media (max-width: 1023px) {
+    bottom: -40px;
   }
 }

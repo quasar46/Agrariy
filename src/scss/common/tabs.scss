@@ -4,20 +4,26 @@
   &.active {
     display: flex;
   }
+  @media (max-width: 1365px) {
+    flex-direction: column;
+  }
 }
 
 .tabs__header {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  margin-bottom: -55px;
   li {
+    font-weight: 500;
     color: #969696;
-    border: 1px solid #969696;
+    border: 1px solid #c5c7c4;
     border-radius: 10px;
     height: 55px;
     display: flex;
     align-items: center;
     padding: 0 28px;
+    cursor: pointer;
     &.active {
       color: #ff5700;
       border-color: #ff5700;
@@ -31,7 +37,38 @@
     &:last-child.active {
       margin-left: -20px;
       background: #fff;
-      z-index: 100;
+      z-index: 10;
     }
+    &:nth-child(1) {
+      padding-right: 48px;
+      &.active {
+        padding: 0 28px;
+        @media (max-width: 1919px) {
+          padding-right: 24px;
+        }
+      }
+      @media (max-width: 1919px) {
+        padding-right: 44px;
+      }
+    }
+    &:nth-child(2) {
+      padding-left: 48px;
+      &.active {
+        padding: 0 28px;
+        @media (max-width: 1919px) {
+          padding: 0 24px;
+        }
+      }
+      @media (max-width: 1919px) {
+        padding-left: 44px;
+      }
+    }
+    @media (max-width: 1919px) {
+      font-size: 16px;
+      height: 52px;
+    }
+  }
+  @media (max-width: 1023px) {
+    height: 48px;
   }
 }

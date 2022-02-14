@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs
+                        ul
+                            li
+                                a(href="/") Главная
+                            li
+                                span |
+                            li
+                                a Избранное
+
+
+
+    include modules/footer
+include modules/script

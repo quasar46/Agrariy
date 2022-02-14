@@ -1,0 +1,27 @@
+.favorite__content {
+  display: flex;
+  justify-content: space-between;
+  //grid-template-columns: 1fr 1fr;
+  //grid-gap: 0 30px
+}
+
+.favorite__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.favorite__cont {
+  font-size: 18px;
+  font-weight: 400;
+  color:#969696;
+}
+
+.favorite__clear {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+

@@ -11,18 +11,30 @@
     display: block;
     color: rgba(28, 28, 28, 0.5);
     margin-bottom: 10px;
-    @media (max-width: 1366px) {
+    @media (max-width: 1919px) {
       font-size: 16px;
     }
   }
   p {
     font-size: 20px;
     font-weight: 500;
-    @media (max-width: 1366px) {
+    line-height: 1.5;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 3;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    @media (max-width: 1919px) {
       font-size: 18px;
     }
   }
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     margin: 0 10px;
   }
 }
@@ -32,14 +44,14 @@
   .slick-list {
     margin: 0 -15px;
     margin-bottom: 35px;
-    @media (max-width: 1366px) {
+    @media (max-width: 1919px) {
       margin: 0 -10px;
     }
-    @media (max-width: 360px) {
+    @media (max-width: 1023px) {
       margin-right: -200px;
     }
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     padding: 0;
   }
 }

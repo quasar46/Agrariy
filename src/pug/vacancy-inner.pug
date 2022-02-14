@@ -22,11 +22,11 @@ html(lang="ru")
                             li 
                                 span |
                             li 
-                                a(href="") Руководитель сервисного центра
+                                a Руководитель сервисного центра
 
                     .vacancy-inner.inner-block
                         .inner-block__header
-                            h2.title Руководитель сервисного центра
+                            h1.title Руководитель сервисного центра
                         .vacancy-inner__wrapper 
                             .vacancy-inner__block 
                                 p.vacancy-inner__title Описание вакансии:
@@ -56,7 +56,7 @@ html(lang="ru")
                                     li ответственность, коммуникабельность, проактивная жизненная позиция, порядочность
 
                             .vacancy-inner__block 
-                                p.vacancy-inner__title Подать резюме:
+                                p.vacancy-inner__title.vacancy-inner__title--mode Подать резюме:
                                 form(action="get")
                                     ul
                                         li
@@ -75,7 +75,7 @@ html(lang="ru")
                                             input(type="email" placeholder="E-mail")
                                         li.input-wrapper
                                             input.input.input__file(type="file" name="file" id="input__file")
-                                            label.input__file-button(for="input__file")
+                                            label.hover.input__file-button(for="input__file")
                                                 span.input__file-icon-wrapper
                                                     img.input__file-icon(src="img/icons/screpka.svg" alt="")
                                                 span.input__file-button-text Прикрепить файл резюме
@@ -83,10 +83,10 @@ html(lang="ru")
 
                                             //- p Один файл до 10 мб.
                                         p.consent Нажимая отправить, я принимаю условия <a href="">пользовательского соглашения</a> и обработки <a href="">персональных данных</a>
-                                        button.button(type="submit") Отправить
+                                        button.hover.button(type="submit") Отправить
 
                             .vacancy-inner__block 
-                                p Хотите больше вакансий? <a href="">Смотреть все.</a>
+                                p Хотите больше вакансий? <a href="vacancy.html">Смотреть все.</a>
 
 
 

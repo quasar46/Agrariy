@@ -1,0 +1,121 @@
+.catalog-aside__block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  ul {
+    height: 180px;
+    padding: 10px 0;
+    overflow-y: auto;
+    li {
+      margin-bottom: 13px;
+      input {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -999;
+        &:checked + label::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 16px;
+          height: 17px;
+          border-radius: 5px;
+          background-color: #ff5700;
+          left: 4px;
+          top: 4px;
+        }
+      }
+      label {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          width: 24px;
+          height: 25px;
+          border-radius: 5px;
+          border: 1px solid #c5c7c4;
+        }
+      }
+    }
+  }
+}
+
+.catalog-aside__caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  p {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  & + ul {
+    display: none;
+  }
+  &.toggle {
+    cursor: pointer;
+  }
+  &.active {
+    img {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.catalog-aside__price {
+  display: flex;
+  //   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  input {
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #c5c7c4;
+    width: calc(100% / 2 - 17px);
+    padding: 0 20px;
+    &:focus {
+      outline: none;
+    }
+  }
+  span {
+    align-self: center;
+  }
+}
+
+.catalog-aside__slide {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #ececec;
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.catalog-aside__dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff5700;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  cursor: pointer;
+}
+
+.catalog-aside__back {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #ff5700;
+  border-radius: 5px;
+}

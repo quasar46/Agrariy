@@ -1,12 +1,12 @@
 .inner-block {
   margin-bottom: 220px;
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     margin-bottom: 170px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     margin-bottom: 140px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     margin-bottom: 90px;
   }
 }
@@ -16,11 +16,14 @@
   font-size: 60px;
   text-transform: uppercase;
   // margin-bottom: 60px;
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     font-size: 50px;
     // margin-bottom: 30px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1365px) {
+    font-size: 44px;
+  }
+  @media (max-width: 1023px) {
     font-size: 36px;
   }
 }
@@ -29,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   a {
     font-size: 20px;
     font-weight: 500;
@@ -37,11 +40,25 @@
     &:hover {
       color: #ff5700;
     }
-    @media (max-width: 1366px) {
+    @media (max-width: 1919px) {
       font-size: 18px;
     }
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1919px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 1365px) {
     margin-bottom: 20px;
+  }
+}
+
+.inner-block__col {
+  max-width: 845px;
+  width: 100%;
+  flex: 1 0 auto;
+  @media (max-width: 1919px) {
+    max-width: 589px;
+  }
+  @media (max-width: 1365px) {
   }
 }

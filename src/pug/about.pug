@@ -18,10 +18,11 @@ html(lang="ru")
                             li 
                                 span |
                             li 
-                                a(href="") О компании
+                                a О компании
 
                     .about
-                        h2.inner-block__title О компании
+                        .inner-block__header
+                            h1.inner-block__title О компании
                         //- статистика
                         .about__stats.inner-block
                             .about__stats-item
@@ -41,7 +42,7 @@ html(lang="ru")
                             .block-picture__wrapper
                                 .block-picture__item.block-picture__item--mode
                                     img(src="img/about/graphic2.png" alt="")
-                                .block-picture__item.block-picture__item--mode
+                                .block-picture__item.block-picture__item--mode.inner-block__col
                                     .inner-block__header
                                         h2.title Запасные части
                                     .block-picture__text
@@ -55,8 +56,7 @@ html(lang="ru")
                                             li Запчасти KABAT
                                             li Фильтрующие элементы: MANN FILTER, Donaldson, Fleetgard, Baldwin, HIFI, SF
                                             li Колеса и комплектующие: Michelin, VOLTYRE, BKT, Firestone, Alliance
-                            .block-picture__footer
-                                p Специалисты нашей компании оказывают квалифицированную помощь в выборе необходимых вам запасных частей, расходных материалов и составлении заказа. Для постоянных клиентов разработаны специальные выгодные условия сотрудничества.
+
                         //- сервис
                         .about__inner.block-picture.inner-block
                             .block-picture__wrapper
@@ -73,7 +73,7 @@ html(lang="ru")
                                             li Текущие и сезонные дефектовки техники. Ко всем работам предоставляются дефектовочные ведомости и фотоотчеты с выявленными неисправностями
                                             li Восстановление отверстий в мостах тракторов, посадочных отверстий под пальцы и т.д. методом наплавки, расточки и завтуливания
                                             li Обрезинивание металлических катков на самоходную и прицепную технику (в частности обрезинивание катков гусеничных тракторов Challenger)
-                                .block-picture__item
+                                .block-picture__item.inner-block__col.about__picture
                                     img(src="img/about/graphic3.png" alt="")
                             .block-picture__footer 
                                 p Специалисты нашей компании оказывают квалифицированную помощь в выборе необходимых вам запасных частей, расходных материалов и составлении заказа. Для постоянных клиентов разработаны специальные выгодные условия сотрудничества.

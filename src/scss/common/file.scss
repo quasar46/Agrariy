@@ -25,6 +25,10 @@
   -ms-flex-pack: center;
   justify-content: center;
   border-right: 1px solid #fff;
+  @media (max-width: 1023px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .input__file-button-text {
@@ -33,7 +37,7 @@
   line-height: 1;
   margin-top: 1px;
   text-decoration: underline;
-  @media (max-width: 360px) {
+  @media (max-width: 1919px) {
     font-size: 18px;
   }
 }
@@ -41,6 +45,7 @@
 .input__file-button {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .input-wrapper {
@@ -50,7 +55,7 @@
   flex-wrap: wrap;
   p {
     color: #969696;
-    @media (max-width: 360px) {
+    @media (max-width: 1023px) {
       font-size: 16px;
     }
   }

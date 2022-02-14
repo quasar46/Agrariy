@@ -1,0 +1,70 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs
+                        ul
+                            li
+                                a(href="/") Главная
+                            li
+                                span |
+                            li
+                                a Избранное
+
+                    .favorite.inner-block
+                        .inner-block__header
+                            h1.inner-block__title Избранное
+                        .favorite__wrapper
+                            .favorite__header
+                                .favorite__count
+                                    span 2 товара
+                                .favorite__clear
+                                    span Очистить
+                            .favorite__content
+                                // favorite-item
+                                .favorite__item.favorite-item
+                                    .favorite-item__content.favorite-item__content--mode
+                                        .favorite-item__picture
+                                            img(src="../img/basket/item.jpg")
+                                        .favorite-item__inner
+                                            p.favorite-item__title Бандаж для катка FARMFLEX 009174.00 LSTX
+                                            .favorite-item__article
+                                                span Артикул:
+                                                p 0232700232701245
+                                            .favorite-item__order
+                                                p Под заказ
+                                            p.favorite-item__description FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...FARMFLEX/330x50/LR/63S...
+                                            .favorite-item__price 2 573 ₽
+                                    .favorite-item__footer
+                                        button.hover.favorite-item__favorite
+                                            img(src="../img/icons/favorite.svg")
+                                        button.hover.button.favorite-item__button В корзину
+
+                                // favorite-item
+                                .favorite__item.favorite-item
+                                    .favorite-item__picture
+                                        img(src="../img/basket/item.jpg")
+                                    .favorite-item__content
+                                        p.favorite-item__title Колесо FARMFLEX 023270.03 330x50
+                                        .favorite-item__article
+                                            span Артикул:
+                                            p 0232700232701245
+                                        .favorite-item__stock
+                                            p В наличии
+                                        p.favorite-item__description FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...FARMFLEX/330x50/LR/63S...
+                                        .favorite-item__price 10 247 ₽
+                                    .favorite-item__footer
+                                        button.hover.favorite-item__favorite
+                                            img(src="../img/icons/favorite.svg")
+                                        button.hover.button.favorite-item__button В корзину
+
+
+
+
+    include modules/footer
+include modules/script

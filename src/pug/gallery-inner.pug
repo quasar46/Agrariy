@@ -1,0 +1,60 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs 
+                        ul 
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li
+                                a(href="") Новости
+                            li 
+                                span |
+                            li
+                                a(href="") Галерея
+                            li 
+                                span |
+                            li 
+                                a(href="") Фотогалерея
+                            li 
+                                span |
+                            li 
+                                a Открытие сервисного центра 
+
+                    .gallery-inner.inner-block
+                        .inner-block__header
+                            h1.inner-block__title открытие сервисного центра
+                        .gallery__wrapper 
+                            .gallery__item 
+                                a(data-fancybox="foto-gallery" data-caption="картинка 1" href="img/pictures/big-foto1.jpg")
+                                    img(src="img/pictures/foto1.jpg" alt="")
+                            .gallery__item 
+                                a(data-fancybox="foto-gallery" data-caption="картинка 2" href="img/pictures/big-foto1.jpg")
+                                    img(src="img/pictures/foto1.jpg" alt="")
+                            .gallery__item 
+                                a(data-fancybox="foto-gallery" data-caption="картинка 3" href="img/pictures/big-foto1.jpg")
+                                    img(src="img/pictures/foto1.jpg" alt="")
+                            .gallery__item 
+                                a(data-fancybox="foto-gallery" data-caption="картинка 4" href="img/pictures/big-foto1.jpg")
+                                    img(src="img/pictures/foto1.jpg" alt="")
+                            .gallery__item 
+                                a(data-fancybox="foto-gallery" data-caption="картинка 5" href="img/pictures/big-foto1.jpg")
+                                    img(src="img/pictures/foto1.jpg" alt="")
+                            .gallery__item 
+                                a(data-fancybox="foto-gallery" data-caption="картинка 6" href="img/pictures/big-foto1.jpg")
+                                    img(src="img/pictures/foto1.jpg" alt="")
+
+
+
+
+            include modules/footer
+        include modules/script        
+        script(src="js/jquery.fancybox.min.js")
+        script(src="js/foto-fb.js")

@@ -39,6 +39,11 @@ gulp.task("css", function () {
         .pipe(gulp.dest("build/css"));
 });
 
+// gulp.task('fancycss', function () {
+//     return gulp.src('src/scss/utils/jquery.fancybox4.css')
+//         .pipe(gulp.dest('build/css'))
+// })
+
 // gulp.task('vendor', function () {
 //     return gulp.src("src/scss/vendor/*.*")
 //         .pipe(gulp.dest("build/css"))
@@ -54,30 +59,12 @@ gulp.task("js", function () {
 
 gulp.task("img", function () {
     return gulp.src("src/img/**/*.*")
-        // .pipe(imagemin([
-        //     imagemin.gifsicle({
-        //         interlaced: true
-        //     }),
-            // imagemin.mozjpeg({
-            //     // quality: 50,
-            //     quality: 20,
-            //     progressive: true
-            // }),
-            // imagemin.optipng({
-            //     // optimizationLevel: 5
-            //     optimizationLevel: 2
-            // }),
-        //     imagemin.svgo({
-        //         plugins: [{
-        //                 removeViewBox: true
-        //             },
-        //             {
-        //                 cleanupIDs: false
-        //             }
-        //         ]
-        //     })
-        // ]))
         .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("fancycss", function () {
+    return gulp.src("src/scss/utils/jquery.fancybox.min.css")
+        .pipe(gulp.dest("build/css/"));
 });
 
 gulp.task("fonts", function () {
@@ -113,5 +100,5 @@ gulp.task("clean", function () {
     return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "fonts", "css", "img", "pug", "js"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("build", gulp.series("clean", "fonts", "css", "fancycss", "img", "pug", "js"));
+gulp.task("start", gulp.series("clean", "build", "server"));

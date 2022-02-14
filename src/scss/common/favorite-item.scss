@@ -1,0 +1,127 @@
+.favorite-item {
+  border: 1px solid #C5C7C4;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: calc(100% / 2 - 15px);
+}
+
+.favorite-item__picture {
+  max-width: 133px;
+  width: 100%;
+  flex:1 0 auto;
+  margin-right: 10px;
+  img {
+    width: 100%;
+  }
+}
+
+.favorite-item__content {
+  display: flex;
+  flex-wrap: wrap;
+  &--mode {
+    display: grid;
+    grid-template-columns: 133px 1fr;
+  }
+}
+
+.favorite-item__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favorite-item__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.favorite-item__article {
+  display: flex;
+  margin-right: 40px;
+  span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.favorite-item__order {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icons/order.svg");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+}
+
+.favorite-item__stock {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icons/stock.svg");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+}
+
+.favorite-item__description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorite-item__favorite {
+  max-width: 45px;
+  width: 100%;
+  height: 45px;
+  background-color: #FF5700;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.favorite-item__price {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.favorite-item__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorite-item__button {
+
+}
