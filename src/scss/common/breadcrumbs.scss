@@ -1,28 +1,46 @@
 .breadcrumbs {
   margin-top: 50px;
   margin-bottom: 10px;
+
   ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
     li {
       margin-right: 10px;
     }
+
     a {
       font-size: 16px;
       color: #969696;
+      white-space: nowrap;
+
       &[href]:hover {
         color: #ff5700;
       }
+
       @media (max-width: 1919px) {
         font-size: 14px;
       }
     }
+
     span {
       color: #969696;
     }
+
+    @media(max-width: 767px) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
   }
+
   @media (max-width: 1023px) {
     margin-top: 35px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+
   }
 }
