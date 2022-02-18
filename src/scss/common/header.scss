@@ -88,7 +88,11 @@
       &.mode {
         position: relative;
         & > ul {
-          padding-left: 30px;
+          // padding-left: 30px;
+          padding-left: 0;
+          @media (max-width: 1919px) {
+            padding-left: 0px;
+          }
         }
         @media (max-width: 1023px) {
           flex-direction: column;
@@ -131,11 +135,13 @@
           display: block;
           visibility: visible;
           opacity: 1;
+          // padding-left: 30px;
           @media (max-width: 1365px) {
             width: 168px;
           }
           @media (max-width: 1023px) {
             width: 100%;
+            padding-left: 30px;
           }
         }
       }

@@ -1,0 +1,20 @@
+.catalog__aside.catalog-aside.catalog-sort__mobile
+    .catalog-aside__wrapper
+        .catalog-aside__title
+            button.catalog-sort__close
+                img(src="img/icons/back.svg")
+            span Сортировка
+        .catalog-aside__block
+            ul
+                li
+                    input(type="radio" name="radiofilter" id="radiofilter1")
+                    label(for="radiofilter1") По возрастанию цены
+                li
+                    input(type="radio" name="radiofilter" id="radiofilter2")
+                    label(for="radiofilter2") По убыванию цены
+                li
+                    input(type="radio" name="radiofilter" id="radiofilter3")
+                    label(for="radiofilter3") По алфавиту
+
+        button.button__outline
+            p Применить

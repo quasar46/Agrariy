@@ -6,6 +6,9 @@
 .basket__fullprice {
   font-size: 24px;
   font-weight: 600;
+  width: 50%;
+  text-align: right;
+  margin-left: auto;
   @media (max-width: 1919px) {
     font-size: 20px;
   }
@@ -14,28 +17,32 @@
 .basket__total {
   font-size: 20px;
   font-weight: 500;
+  width: 50%;
+
   @media (max-width: 1919px) {
     font-size: 18px;
   }
 }
 
 .basket__footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: space-between;
-  p {
-    &:nth-child(2) {
-      text-align: right;
-    }
-  }
 
   .button {
+    margin-left: auto;
     margin-top: 30px;
     align-self: flex-end;
     margin-left: auto;
+    @media (max-width: 1023px) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      justify-content: center;
+      display: none;
+    }
   }
 }
 
@@ -47,11 +54,22 @@
 
   img {
     margin-bottom: 50px;
+    @media (max-width: 1365px) {
+      width: 250px;
+    }
+    @media (max-width: 1023px) {
+      width: 186px;
+    }
   }
 
   p {
+    font-size: 20px;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 30px;
+    @media (max-width: 1919px) {
+      font-size: 18px;
+    }
   }
 
   .button {
@@ -64,19 +82,125 @@
     align-items: center;
     display: grid;
     grid-template-areas:
-    "title title single basket total cross"
-    "article have single basket total cross";
+      "title title single basket total cross"
+      "article have single basket total cross";
+
+    .item-product__title {
+      @media (max-width: 1365px) {
+        margin-bottom: 5px;
+      }
+    }
 
     .item-product__cross {
       margin-left: auto;
+      @media (max-width: 1023px) {
+        background-image: url("../img/icons/basket-delete.svg");
+      }
     }
 
     .item-product__article {
       margin-right: 0;
+      width: 0px;
+      @media (max-width: 1919px) {
+        width: 80px;
+      }
+      @media (max-width: 1365px) {
+        width: 190px;
+        margin-bottom: 5px;
+      }
+      @media (max-width: 1023px) {
+        margin-bottom: 4px;
+      }
     }
 
     .item-product__have {
-      margin-left: -168px;
+      // margin-left: -168px;
+      @media (max-width: 1023px) {
+        margin-bottom: 8px;
+      }
+    }
+    .item-product__price {
+      @media (max-width: 1023px) {
+        margin-bottom: 12px;
+        font-size: 18px;
+      }
+    }
+    .item-product__calc {
+      @media (max-width: 1023px) {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+    .item-product__price--total {
+      @media (max-width: 1365px) {
+        margin-top: -20px;
+      }
+      @media (max-width: 1023px) {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 1365px) {
+      padding: 20px;
+      grid-template-areas:
+        "title basket single cross"
+        "article basket single cross"
+        "have basket total cross";
+    }
+    @media (max-width: 1023px) {
+      padding: 16px;
+      grid-template-areas:
+        "title title"
+        "article article"
+        "have have"
+        "single total"
+        "basket cross";
+    }
+  }
+  &.basket__item--cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .item-product__picture {
+      // max-width: 100%;
+      // margin-right: 0;
+      img {
+        // width: 100%;
+      }
+      @media (max-width: 1023px) {
+        position: absolute;
+        left: 16px;
+        top: 26px;
+        max-width: 80px;
+      }
+    }
+    .item-cart {
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+        "title title single basket total cross"
+        "article have single basket total cross";
+
+      .item-product__cross {
+        align-self: center;
+      }
+      .item-product__price {
+        align-self: center;
+      }
+      @media (max-width: 1365px) {
+        grid-template-areas:
+          "title basket single cross"
+          "article basket single cross"
+          "have basket total cross";
+      }
+      @media (max-width: 1023px) {
+        grid-template-areas:
+          "cart title"
+          "cart article"
+          "cart have"
+          "single total"
+          "basket cross";
+        grid-template-columns: 80px auto;
+      }
     }
   }
 }

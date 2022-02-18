@@ -4,25 +4,48 @@
   margin-top: 40px;
 
   a {
-    // margin-right: 15px;
-    max-width: 45px;
-    height: 45px;
-    width: 100%;
+    // max-width: 45px;
+    // height: 45px;
+    // width: 100%;
     font-size: 20px;
     font-weight: 500;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 0 auto;
+    // flex: 1 0 auto;
+    margin-right: 15px;
     height: 45px;
     cursor: pointer;
     &:last-child {
       background: #ececec;
+      margin-left: 25px;
+      margin-right: 0;
+      max-width: 45px;
+      width: 100%;
+      flex: 1 0 auto;
+      height: 45px;
+      @media (max-width: 1919px) {
+        margin-left: 20px;
+        max-width: 40px;
+        height: 40px;
+      }
     }
     &.active {
       background: #ff5700;
       color: #fff;
+      max-width: 45px;
+      width: 100%;
+      flex: 1 0 auto;
+      height: 45px;
+      @media (max-width: 1919px) {
+        max-width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 1365px) {
+      margin-right: 20px;
     }
   }
 }

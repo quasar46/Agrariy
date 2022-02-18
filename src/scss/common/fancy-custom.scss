@@ -3,10 +3,46 @@
   //   overflow: hidden;
 }
 
+@media (height: 768px) {
+  .fancybox-content {
+    height: 600px !important;
+  }
+}
+
 .fancybox-stage {
   @media (max-width: 1023px) {
     max-width: 328px;
     margin: 0 auto;
+  }
+}
+
+.gallery-foto {
+  color: #fff;
+  a[data-fancybox] {
+    position: relative;
+  }
+
+  a[data-fancybox]:hover {
+    transform: scale(1.01);
+    transition: ease 0.3s;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background-image: url("../img/icons/glass.svg");
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.gallery-video {
+  a[data-fancybox] {
+    &:hover {
+      transform: scale(1.01);
+    }
   }
 }
 
@@ -80,6 +116,10 @@ a[data-fancybox-close] {
   bottom: -90px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.fancybox-caption {
+  background: transparent;
 }
 
 .fancybox-caption__body {

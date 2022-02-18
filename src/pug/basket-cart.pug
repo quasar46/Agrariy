@@ -1,0 +1,92 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs
+                        ul
+                            li
+                                a(href="/") Главная 
+                            li
+                                span |
+                            li
+                                a Корзина
+
+                    .basket.inner-block
+                        .inner-block__header
+                            h1.inner-block__title Корзина
+                        .basket__wrapper
+                            .basket__header.basket-header
+                                .basket-header__count
+                                    span 2 товара
+                                .basket-header__clear.clear-items
+                                    a(href="basket-empty")  Очистить
+                            //- item basket
+                            .basket__item.item-product.basket__item--cart
+                                .item-product__picture
+                                    img(src="img/basket/item.jpg")
+                                div.item-cart
+                                    p.item-product__title Колесо FARMFLEX 023270.03 330x50
+                                    .item-product__article
+                                        span Артикул:&nbsp;
+                                        p 0232700232701245
+                                    .item-product__have
+                                        span
+                                        p В наличии
+                                    .item-product__price.item-product__price--single
+                                        span 5 574
+                                            i ₽
+                                    .item-product__calc
+                                        button.minus
+                                            img(src="img/icons/minus.svg" alt="")
+                                        span 2
+                                        button.plus
+                                            img(src="img/icons/plus.svg" alt="")
+                                    .item-product__price.item-product__price--total
+                                        span 11 148
+                                            i ₽
+                                    .item-product__cross
+                            //- item basket
+                            .basket__item.item-product.basket__item--cart
+                                .item-product__picture
+                                    img(src="img/basket/item.jpg")
+                                div.item-cart
+                                    p.item-product__title Колесо FARMFLEX 023270.03 330x50
+                                    .item-product__article
+                                        span Артикул:&nbsp;
+                                        p 0232700232701245
+                                    .item-product__have
+                                        span
+                                        p В наличии
+                                    .item-product__price.item-product__price--single
+                                        span 5 574
+                                            i ₽
+                                    .item-product__calc
+                                        button.minus
+                                            img(src="img/icons/minus.svg" alt="")
+                                        span 2
+                                        button.plus
+                                            img(src="img/icons/plus.svg" alt="")
+                                    .item-product__price.item-product__price--total
+                                        span 11 148
+                                            i ₽
+                                    .item-product__cross
+
+                        .basket__footer
+                            p.basket__total Итого к оплате:
+                            p.basket__fullprice 18 253 ₽
+                            button.button.hover.placeOrder Оформить заказ
+                            .button__outline.placeOrder 
+                                p Оформить заказ
+
+
+
+
+
+
+        include modules/footer
+        include modules/script

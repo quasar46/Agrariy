@@ -3,11 +3,16 @@
   grid-gap: 30px 240px;
   //   grid-template-rows: 1fr 1fr 1fr 1fr;
   //   grid-template-columns: 1fr 1fr;
+  grid-template-columns: 845px 1fr;
   grid-template-areas:
     "item1 item4"
     "item2 item4"
     "item3 item4"
     "item5 item4";
+    @media (max-width: 1919px) {
+      grid-template-columns: 589px 1fr;
+      grid-gap: 30px 160px;
+    }
   @media (max-width: 1365px) {
     display: flex;
     flex-direction: column;

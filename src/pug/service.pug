@@ -1,0 +1,54 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs
+                        ul
+                            li
+                                a(href="/") Главная 
+                            li 
+                                span |
+                            li 
+                                a Сервис
+
+                    .service.inner-block
+                        .inner-block__header
+                            h1.inner-block__title Сервис
+                        .vacancy__wrapper 
+                            a.hover.vacancy__item
+                                span Диагностика и ремонт сельскохозяйственной техники на объекте
+                                button.arrow2 
+                            a.hover.vacancy__item
+                                span Регламентные работы сельскохозяйственной техники
+                                button.arrow2 
+                            a.hover.vacancy__item
+                                span Дефектовки техники (текущие и сезонные)
+                                button.arrow2 
+                            a.hover.vacancy__item
+                                span Заправка кондиционеров
+                                button.arrow2 
+                            a.hover.vacancy__item
+                                span Восстановление отверстий (в мостах тракторов, посадочных отверстий под пальцы)
+                                button.arrow2 
+                            a.hover.vacancy__item
+                                span Диагностика и ремонт двигателей
+                                button.arrow2 
+                            a.hover.vacancy__item
+                                span Обрезинивание металлических катков на самоходную и прицепную технику
+                                button.arrow2 
+                            a.hover.vacancy__item
+                                span Крупноузловой ремонт (двигатели, КПП, мосты)
+                                button.arrow2 
+
+                    include modules/questions
+
+
+
+
+            include modules/footer
+        include modules/script

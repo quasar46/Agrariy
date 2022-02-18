@@ -13,13 +13,13 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: true,
         responsive: [{
-            breakpoint: 1025,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
             {
-                breakpoint: 361,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
                     arrows: false,
@@ -34,15 +34,15 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: false,
         responsive: [{
-            breakpoint: 1025,
-            settings: {
-                slidesToShow: 3,
-                arrows: true,
-                dots: true,
-            }
-        },
+                breakpoint: 1365,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: true,
+                    dots: true,
+                }
+            },
             {
-                breakpoint: 361,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
                     arrows: false,
@@ -60,12 +60,14 @@ $(document).ready(function () {
         dots: true,
         mobileFirst: true,
         responsive: [{
-            breakpoint: 361,
+            breakpoint: 1023,
             settings: 'unslick'
         }]
     })
 
     $('#burger').on('click', function () {
+        $('.modal').removeClass('show');
+        $('.catalog__aside').removeClass('active');
         if (window.innerWidth > 1023) {
             $('body').toggleClass('hidden');
             $(this).toggleClass('active');
@@ -111,6 +113,11 @@ $(document).ready(function () {
     $("#buttonLk").on("click", function () {
         $(".modal").addClass("show");
         $(".modal__lk").addClass("show");
+        $("body").addClass('hidden');
+    });
+    $(".placeOrder").on("click", function () {
+        $(".modal").addClass("show");
+        $(".modal__yourOrder").addClass("show");
         $("body").addClass('hidden');
     });
     // $('#orderBtn').on('click', function () {
@@ -214,9 +221,9 @@ $(document).ready(function () {
 
     const clickBtn = () => {
         const btns = document.querySelectorAll(".catalog-content__buttons button")
-            const content = document.querySelector(".catalog-content__wrapper")
+        const content = document.querySelector(".catalog-content__wrapper")
         for (let i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
+            btns[i].addEventListener("click", function () {
                 for (let x = 0; x < btns.length; x++) {
                     btns[x].classList.remove('active');
                 }
@@ -226,4 +233,57 @@ $(document).ready(function () {
         }
     }
     clickBtn();
+
+    if ($(window).innerWidth() < 1366) {
+        $('.nav-catalog').html('Каталог');
+    }
+
+    $('.price-up').on('click', function () {
+        $(this).toggleClass('active');
+        $('.price-up__down').slideToggle();
+    })
+
+    $('.catalog-content__filter-btn').on('click', function () {
+        $('.catalog-aside__mobile').addClass('active');
+        $('body').addClass('hidden');
+    })
+
+    $('.catalog-content__sort-btn').on('click', function () {
+        $('.catalog-sort__mobile').addClass('active');
+        $('body').addClass('hidden');
+    })
+
+    $('.catalog-aside__close').on('click', function () {
+        $('.catalog-aside__mobile').removeClass('active');
+        $('body').removeClass('hidden');
+    })
+
+    $('.catalog-sort__close').on('click', function () {
+        $('.catalog-sort__mobile').removeClass('active');
+        $('body').removeClass('hidden');
+    })
+
+    //- закрыть карточку в кататлоге
+    $('.item-product__cross').on('click', function () {
+        $(this).closest('.item-product').hide();
+    })
+
+    const submitBtns = document.querySelectorAll('.modal button[type="submit"]');
+    const modal = document.querySelector('.modal');
+    const modalOrder = document.querySelector('.modal__order');
+    const clickSubmit = () => {
+        submitBtns.forEach(item => {
+            item.addEventListener('click', function (evt) {
+                evt.preventDefault();
+                modalOrder.classList.add('show');
+                this.parentElement.parentElement.classList.remove('show');
+                setTimeout(function () {
+                    modal.classList.remove('show');
+                }, 1500)
+            })
+        })
+
+    }
+    clickSubmit();
+
 });

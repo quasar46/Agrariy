@@ -58,7 +58,17 @@ footer.footer
             input(type="text" placeholder="ФИО")
             input.phone-input(type="text" placeholder="+7 (___) ___-__-__")
             p Нажимая отправить, я принимаю условия <a href="">пользовательского соглашения</a> и условия обработки <a href="">персональных данных</a>
-            button.button#orderBtn Заказать
+            button.button#orderBtn(type="submit") Заказать
+    // Ваш заказ
+    .modal__inner.modal__yourOrder
+        button.cross
+            //- img(src="img/icons/cross.svg" alt="закрыть модальное окно")
+        h2.modal__title Ваш заказ
+        form.modal__form(action="") 
+            input(type="text" placeholder="ФИО")
+            input.phone-input(type="text" placeholder="+7 (___) ___-__-__")
+            p Нажимая отправить, я принимаю условия <a href="">пользовательского соглашения</a> и условия обработки <a href="">персональных данных</a>
+            button.button#orderBtn(type="submit") Оформить заказ
     // личный кабинет
     .modal__inner.modal__lk
         button.cross

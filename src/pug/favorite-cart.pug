@@ -1,0 +1,102 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                include modules/aside
+                .content
+                    .breadcrumbs
+                        ul
+                            li
+                                a(href="/") Главная
+                            li
+                                span |
+                            li
+                                a Избранное
+
+                    .favorite.inner-block
+                        .inner-block__header
+                            h1.inner-block__title Избранное
+                        .favorite__wrapper
+                            .favorite__header
+                                .favorite__count
+                                    span 2 товара
+                                .favorite__clear.clear-items
+                                    a(href="favorite-empty.html")  Очистить
+                            .favorite__content
+                                //- favorite-item
+                                .favorite__item.item-product.favorite-item
+                                    .favorite-item__content.favorite-item__content--cart
+                                        .item-product__picture
+                                            img(src="img/catalog/item1.png" alt="")
+                                        p.item-product__title Бандаж для катка FARMFLEX 009174.00 LSTX
+                                        .item-product__article
+                                            span Артикул:&nbsp;
+                                            p 0232700232701245
+                                        .item-product__have.item-product__have--none
+                                            span
+                                            p Под заказ
+                                        p.item-product__description FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...FARMFLEX/330x50/LR/63S...
+                                        .item-product__price 2 573 ₽
+                                        button.hover.item-product__favorite.active
+                                            img(src="../img/icons/favorite.svg")
+                                        button.hover.button.item-product__basket В корзину
+                                //- favorite-item
+                                .favorite__item.item-product.favorite-item
+                                    .favorite-item__content.favorite-item__content--cart
+                                        .item-product__picture
+                                            img(src="img/catalog/item1.png" alt="")
+                                        p.item-product__title Бандаж для катка FARMFLEX 009174.00 LSTX
+                                        .item-product__article
+                                            span Артикул:&nbsp;
+                                            p 0232700232701245
+                                        .item-product__have.item-product__have--none
+                                            span
+                                            p Под заказ
+                                        p.item-product__description FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...FARMFLEX/330x50/LR/63S...
+                                        .item-product__price 2 573 ₽
+                                        button.hover.item-product__favorite.active
+                                            img(src="../img/icons/favorite.svg")
+                                        button.hover.button.item-product__basket В корзину
+                                //- favorite-item
+                                .favorite__item.item-product.favorite-item
+                                    .favorite-item__content.favorite-item__content--cart
+                                        .item-product__picture
+                                            img(src="img/catalog/item1.png" alt="")
+                                        p.item-product__title Бандаж для катка FARMFLEX 009174.00 LSTX
+                                        .item-product__article
+                                            span Артикул:&nbsp;
+                                            p 0232700232701245
+                                        .item-product__have.item-product__have--none
+                                            span
+                                            p Под заказ
+                                        p.item-product__description FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...FARMFLEX/330x50/LR/63S...
+                                        .item-product__price 2 573 ₽
+                                        button.hover.item-product__favorite.active
+                                            img(src="../img/icons/favorite.svg")
+                                        button.hover.button.item-product__basket В корзину
+                                //- favorite-item
+                                .favorite__item.item-product.favorite-item
+                                    .favorite-item__content.favorite-item__content--cart
+                                        .item-product__picture
+                                            img(src="img/catalog/item1.png" alt="")
+                                        p.item-product__title Бандаж для катка FARMFLEX 009174.00 LSTX
+                                        .item-product__article &nbsp;
+                                            span Артикул:
+                                            p 0232700232701245
+                                        .item-product__have.item-product__have--none
+                                            span
+                                            p Под заказ
+                                        p.item-product__description FARMFLEX/330x50/LR/63S/PB/C2/16X44/RAL9005/RL9005/RAL9005...FARMFLEX/330x50/LR/63S...
+                                        .item-product__price 2 573 ₽
+                                        button.hover.item-product__favorite.active
+                                            img(src="../img/icons/favorite.svg")
+                                        button.hover.button.item-product__basket В корзину
+
+
+
+
+    include modules/footer
+include modules/script

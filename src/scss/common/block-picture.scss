@@ -1,5 +1,6 @@
 .block-picture__wrapper {
   display: flex;
+  justify-content: space-between;
   //   align-items: center;
   @media (max-width: 1023px) {
     flex-direction: column;
@@ -93,6 +94,7 @@
   }
   @media (max-width: 1023px) {
     margin-bottom: 32px;
+    margin-bottom: 0;
   }
 }
 

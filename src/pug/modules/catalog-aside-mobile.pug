@@ -1,0 +1,94 @@
+.catalog__aside.catalog-aside.catalog-aside__mobile
+    .catalog-aside__wrapper
+        .catalog-aside__title
+            button.catalog-aside__close
+                img(src="img/icons/back.svg")
+            span Фильтр
+            p.reset-items Сбросить
+        .catalog-aside__block
+            .catalog-aside__caption.toggle
+                p Бренд:
+                img(src="img/icons/arrow.svg" alt="")
+            ul
+                li
+                    input(type="checkbox" id="inp10")
+                    label(for="inp10") ALPEGO
+                li
+                    input(type="checkbox" id="inp11")
+                    label(for="inp11") BECKER
+                li
+                    input(type="checkbox" id="inp12")
+                    label(for="inp12") ALPEGO
+                li
+                    input(type="checkbox" id="inp13")
+                    label(for="inp13") BECKER
+                li
+                    input(type="checkbox" id="inp14")
+                    label(for="inp14") BECKER
+                li
+                    input(type="checkbox" id="inp15")
+                    label(for="inp15") BECKER
+                li
+                    input(type="checkbox" id="inp16")
+                    label(for="inp16") BECKER
+        //- категория
+        .catalog-aside__block
+            .catalog-aside__caption.toggle
+                p Категория:
+                img(src="img/icons/arrow.svg" alt="")
+            ul
+                li Для тракторов
+                li Для комбайнов
+                li Для тракторов
+                li Для комбайнов
+                li Для тракторов
+                li Для комбайнов
+                li Для тракторов
+                li Для комбайнов
+        //- наличие в магазинах
+        .catalog-aside__block
+            .catalog-aside__caption.toggle
+                p Наличие в магазинах:
+                img(src="img/icons/arrow.svg" alt="")
+            ul
+                li
+                    input(type="radio" id="radio1" name="radio")
+                    label(for="radio1") Только в наличии
+                li
+                    input(type="radio" id="radio2" name="radio")
+                    label(for="radio2") Под заказ
+        //- цена
+        .catalog-aside__block.catalog-aside__price
+            .catalog-aside__caption
+                p Цена:
+            .catalog-aside__price
+                input(type="text" placeholder="1 000")
+                span -
+                input(type="text" placeholder="100 000")
+                div.catalog-aside__slide
+                    span.catalog-aside__dot
+                    span.catalog-aside__back
+
+        //- страна производитель
+        .catalog-aside__block
+            .catalog-aside__caption.toggle
+                p Страна производитель:
+                img(src="img/icons/arrow.svg" alt="")
+            ul
+                li
+                    input(type="checkbox" id="county1")
+                    label(for="country1") Германия
+                li
+                    input(type="checkbox" id="country2")
+                    label(for="country2") США
+                li
+                    input(type="checkbox" id="country3")
+                    label(for="country3") Россия
+                li
+                    input(type="checkbox" id="country4")
+                    label(for="country4") Россия
+                li
+                    input(type="checkbox" id="country5")
+                    label(for="country5") Россия
+        button.button__outline 
+            p Применить

@@ -8,12 +8,12 @@
       margin-right: -200px;
     }
   }
-  .slick-dots {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 35px;
-  }
+  // .slick-dots {
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   padding-top: 35px;
+  // }
   @media (max-width: 1023px) {
     margin: 0 -8px;
   }
@@ -39,3 +39,9 @@
     }
   }
 }
+
+// .partners-inner.inner-block {
+//   @media (max-width: 1023px) {
+//     margin-bottom: 110px;
+//   }
+// }

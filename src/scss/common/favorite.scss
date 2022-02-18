@@ -1,8 +1,12 @@
 .favorite__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   //grid-template-columns: 1fr 1fr;
   //grid-gap: 0 30px
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
 }
 
 .favorite__header {
@@ -12,16 +16,22 @@
   margin-bottom: 20px;
 }
 
-.favorite__cont {
+.favorite__count {
   font-size: 18px;
   font-weight: 400;
-  color:#969696;
+  color: #969696;
+  @media (max-width: 1919px) {
+    font-size: 16px;
+  }
 }
 
 .favorite__clear {
   font-size: 20px;
   font-weight: 500;
   text-decoration: underline;
+  color: #1c1c1c;
   cursor: pointer;
+  @media (max-width: 1991px) {
+    font-size: 18px;
+  }
 }
-

@@ -1,17 +1,26 @@
 .catalog__wrapper {
   display: flex;
 }
-.catalog__aside {
-  display: flex;
-  flex-direction: column;
-  max-width: 290px;
-  width: 100%;
-  flex: 1 0 auto;
-  margin-right: 160px;
-}
-
-
 
 .catalog__content {
   width: 100%;
+}
+
+
+.catalog__count {
+  display: flex;
+  align-items: center;
+  span, p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #969696;
+    @media (max-width: 1919px) {
+      font-size: 16px;
+    }
+  }
+  p {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
 }

@@ -148,16 +148,28 @@ textarea:-ms-input-placeholder {
   width: 64px;
   height: 52px;
   background: #ececec;
-  border-radius: 5px 20px 5px 20px;
+  // border-radius: 5px 20px 5px 20px;
+  border-radius: 20px 5px 20px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
-  right: 70px;
+  z-index: 90;
+  left: 500px;
   bottom: 150px;
   cursor: pointer;
+  bottom: 50px;
   img {
     transform: rotate(-90deg);
+  }
+  @media (max-width: 1919px) {
+    left: 400px;
+  }
+  @media (max-width: 1365px) {
+    left: 100px;
+  }
+  @media (max-width: 1023px) {
+    // right: 16px;
+    left: 16px;
   }
 }
 
@@ -169,4 +181,21 @@ textarea:-ms-input-placeholder {
       color: #ff5700;
     }
   }
+}
+
+.clear-items {
+  font-size: 20px;
+  font-weight: 500;
+  @media (max-width: 1920px) {
+    font-size: 18px;
+  }
+}
+
+.reset-items {
+  font-size: 16px;
+  font-weight: 400;
+  color: #969696;
+  text-transform: none;
+  margin-left: auto;
+  cursor: pointer;
 }

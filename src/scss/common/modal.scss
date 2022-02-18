@@ -141,3 +141,29 @@
     }
   }
 }
+
+.modal__order {
+  padding: 40px 30px;
+  p {
+    @media (max-width: 1365px) {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 1919px) {
+    padding: 25px 20px;
+    font-size: 16px;
+  }
+  @media (max-width: 1365px) {
+    padding: 25px 14px;
+  }
+  @media (max-width: 1023px) {
+    padding: 25px 20px;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    max-width: 328px;
+    width: 100%;
+  }
+}
